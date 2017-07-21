@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Aoo-hd-oIe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="p8B-ta-GUN">
+            <objects>
+                <viewController id="Aoo-hd-oIe" customClass="LoginViewController" customModule="Dia_bestie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iMf-4l-P83"/>
+                        <viewControllerLayoutGuide type="bottom" id="mFj-QO-vNF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="73F-hg-gTM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4f-Lk-DMb">
+                                <rect key="frame" x="75.5" y="522" width="223" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.0" green="0.9409179688" blue="0.84223090280000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Aoo-hd-oIe" eventType="touchUpInside" id="Q3N-hE-ahv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVV-92-tqx">
+                                <rect key="frame" x="76" y="447" width="223" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="lmp-kX-Pjn"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.0" green="0.9409179688" blue="0.84223090280000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButtonTapped:" destination="Aoo-hd-oIe" eventType="touchUpInside" id="wCS-o9-tAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.94091796875" blue="0.84223090277777779" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z4f-Lk-DMb" firstAttribute="centerX" secondItem="73F-hg-gTM" secondAttribute="centerX" id="6ei-Ud-wR1"/>
+                            <constraint firstItem="Z4f-Lk-DMb" firstAttribute="top" secondItem="kVV-92-tqx" secondAttribute="bottom" constant="30" id="HuV-8U-3d9"/>
+                            <constraint firstItem="Z4f-Lk-DMb" firstAttribute="height" secondItem="kVV-92-tqx" secondAttribute="height" id="Ndc-BC-BbI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kVV-92-tqx" secondAttribute="trailing" constant="60" id="S6B-fz-P2I"/>
+                            <constraint firstItem="mFj-QO-vNF" firstAttribute="top" secondItem="Z4f-Lk-DMb" secondAttribute="bottom" constant="100" id="Ux3-D9-fXt"/>
+                            <constraint firstItem="Z4f-Lk-DMb" firstAttribute="top" secondItem="kVV-92-tqx" secondAttribute="bottom" constant="30" id="V0q-se-tbq"/>
+                            <constraint firstItem="Z4f-Lk-DMb" firstAttribute="width" secondItem="kVV-92-tqx" secondAttribute="width" id="aJ5-FT-Wj7"/>
+                            <constraint firstItem="kVV-92-tqx" firstAttribute="leading" secondItem="73F-hg-gTM" secondAttribute="leadingMargin" constant="60" id="yso-2q-ROA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Z4f-Lk-DMb" id="8GO-AV-H6r"/>
+                        <outlet property="signUpButton" destination="kVV-92-tqx" id="5mw-Zv-Wy5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wA-m7-ODk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="149.77511244377811"/>
+        </scene>
+    </scenes>
+</document>
