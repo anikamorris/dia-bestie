@@ -16,7 +16,9 @@
 		CF0838D81F1D8375006DBDC8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0838D71F1D8375006DBDC8 /* Login.storyboard */; };
 		CF0838DA1F1EE534006DBDC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0838D91F1EE534006DBDC8 /* LoginViewController.swift */; };
 		CF0838E01F22651B006DBDC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF0838DE1F226480006DBDC8 /* GoogleService-Info.plist */; };
+		CF72573E1F26790300D1BEF6 /* DisplayNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72573D1F26790300D1BEF6 /* DisplayNameViewController.swift */; };
 		CFF05A7D1F22749A00C4A5D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF05A7C1F22749A00C4A5D5 /* User.swift */; };
+		CFF05A831F22AFF900C4A5D5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF05A821F22AFF900C4A5D5 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,9 @@
 		CF0838D71F1D8375006DBDC8 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CF0838D91F1EE534006DBDC8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CF0838DE1F226480006DBDC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF72573D1F26790300D1BEF6 /* DisplayNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNameViewController.swift; sourceTree = "<group>"; };
 		CFF05A7C1F22749A00C4A5D5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CFF05A821F22AFF900C4A5D5 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				CF0838D51F1D81F9006DBDC8 /* Storyboards */,
 				CF0838D61F1D8220006DBDC8 /* Supporting */,
 				CFF05A7E1F22749F00C4A5D5 /* Models */,
+				CFF05A811F22A47900C4A5D5 /* Services */,
 			);
 			path = "Dia-bestie";
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			children = (
 				CF0838C21F1D5AC5006DBDC8 /* ViewController.swift */,
 				CF0838D91F1EE534006DBDC8 /* LoginViewController.swift */,
+				CF72573D1F26790300D1BEF6 /* DisplayNameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -130,6 +136,14 @@
 				CFF05A7C1F22749A00C4A5D5 /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		CFF05A811F22A47900C4A5D5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CFF05A821F22AFF900C4A5D5 /* UserService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF72573E1F26790300D1BEF6 /* DisplayNameViewController.swift in Sources */,
 				CFF05A7D1F22749A00C4A5D5 /* User.swift in Sources */,
+				CFF05A831F22AFF900C4A5D5 /* UserService.swift in Sources */,
 				CF0838DA1F1EE534006DBDC8 /* LoginViewController.swift in Sources */,
 				CF0838C31F1D5AC5006DBDC8 /* ViewController.swift in Sources */,
 				CF0838C11F1D5AC5006DBDC8 /* AppDelegate.swift in Sources */,

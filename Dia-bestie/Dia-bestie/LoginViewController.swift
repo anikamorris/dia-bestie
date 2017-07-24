@@ -12,35 +12,20 @@ import FirebaseAuth
 import FirebaseAuthUI
 import FirebaseDatabase
 
-class LoginViewController: UIViewController {
+typealias FIRUser = FirebaseAuth.User
+
+class LoginViewController: UIViewController { 
     
-    typealias FIRUser = FirebaseAuth.User
-    
-    @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loginButton.layer.cornerRadius = 15
-        signUpButton.layer.cornerRadius = 15
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    
-    @IBAction func signUpButtonTapped(_ sender: UIButton) {
-        guard let authUI = FUIAuth.defaultAuthUI()
-            else { return }
-        
-        authUI.delegate = self
-        
-        let authViewController = authUI.authViewController()
-        present(authViewController, animated: true)
-        print("sign up button tapped")
-
     }
     
     
@@ -52,11 +37,9 @@ class LoginViewController: UIViewController {
         
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
-        print("login button tapped")
-        
     }
-}
 
+}
 
 extension LoginViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
@@ -72,9 +55,15 @@ extension LoginViewController: FUIAuthDelegate {
         
         userRef.observeSingleEvent(of: .value, with: { (snapshot) in
             if let user = User(snapshot: snapshot) {
-                print("User already exists \(user.uid)!")
+                print("Welcome back, \(user.displayName).")
+                let storyboard = UIStoryboard(name: "Main", bundle: .main)
+                
+                if let initialViewController = storyboard.instantiateInitialViewController() {
+                    self.view.window?.rootViewController = initialViewController
+                    self.view.window?.makeKeyAndVisible()
+                }
             } else {
-                print("New user!")
+                self.performSegue(withIdentifier: "toDisplayName", sender: self)
             }
         })
     }
