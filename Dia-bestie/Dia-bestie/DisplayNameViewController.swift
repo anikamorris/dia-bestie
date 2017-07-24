@@ -35,14 +35,13 @@ class DisplayNameViewController: UIViewController {
         UserService.create(firUser, displayName: displayName) { (user) in
             guard let user = user else { return }
             
-            print("Created new user: \(user.displayName)")
-        }
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        
-        if let initialViewController = storyboard.instantiateInitialViewController() {
+            User.setCurrent(user)
+            
+            let initialViewController = UIStoryboard.initialViewController(for: .main)
             self.view.window?.rootViewController = initialViewController
             self.view.window?.makeKeyAndVisible()
+            
+            print("Created new user: \(user.displayName)")
         }
     }
 }
