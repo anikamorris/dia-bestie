@@ -181,6 +181,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZW-Ie-cdn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -200,6 +203,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3cT-yi-B4b"/>
                     <connections>
+                        <outlet property="calculateButton" destination="q6U-uN-PKG" id="Ncr-5I-lnO"/>
                         <segue destination="l0k-8y-mdn" kind="show" identifier="toCorrections" id="IkP-Nd-hMI"/>
                     </connections>
                 </viewController>
@@ -259,6 +263,9 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.41568627450980389" green="0.94509803921568625" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="oeR-tp-tRa" kind="unwind" unwindAction="unwindToStatsViewController:" id="tAT-nm-T4v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -283,6 +290,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKM-89-O2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oeR-tp-tRa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1816.8" y="-7.6461769115442282"/>
         </scene>

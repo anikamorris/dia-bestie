@@ -12,5 +12,12 @@ struct Constansts {
     
     struct Segue {
         static let toDisplayName = "toDisplayName"
+        static let toCorrections = "toCorrections"
+        static let toEatingOne = "toEatingOne"
+        static let toEatingTwo = "toEatingTwo"
+        static let toYesYesCalc = "toYesYesCalc"
+        static let toYesNoCalc = "toYesNoCalc"
+        static let toNoYesCalc = "toNoYesCalc"
+        static let toNoNoCalc = "toNoNoCalc"
     }
 }

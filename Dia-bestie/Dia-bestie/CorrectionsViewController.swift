@@ -24,9 +24,11 @@ class CorrectionsViewController: UIViewController {
     }
     
     @IBAction func yesButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: Constansts.Segue.toEatingOne, sender: self)
     }
     
     @IBAction func noButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: Constansts.Segue.toEatingTwo, sender: self)
     }
     
     @IBAction func unwindToCorrectionsController(_ segue: UIStoryboardSegue) {
