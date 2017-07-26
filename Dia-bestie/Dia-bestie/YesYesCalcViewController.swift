@@ -23,6 +23,7 @@ class YesYesCalcViewController: UIViewController {
         super.viewDidLoad()
         
         numberOfUnitsLabel.textColor = UIColor.white
+        findTotalUnitsButton.layer.cornerRadius = 8
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +35,7 @@ class YesYesCalcViewController: UIViewController {
     }
     
     @IBAction func findTotalUnitsButtonTapped(_ sender: UIButton) {
-    
+        
     }
     
 }

@@ -21,6 +21,7 @@ class NoNoCalcViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         numberOfUnitsLabel.textColor = UIColor.white
+        findTotalUnitsButton.layer.cornerRadius = 8
     }
     
     override func viewDidAppear(_ animated: Bool) {

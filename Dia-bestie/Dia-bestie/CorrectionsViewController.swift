@@ -17,6 +17,9 @@ class CorrectionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        yesButton.layer.cornerRadius = 5
+        noButton.layer.cornerRadius = 5
     }
     
     override func didReceiveMemoryWarning() {

@@ -15,6 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var isfTextField: UITextField!
     @IBOutlet weak var targetBGTextField: UITextField!
     @IBOutlet weak var insulinDurationTextField: UITextField!
+    @IBOutlet weak var midnightRatioTextField: UITextField!
+    @IBOutlet weak var twoAMTextField: UITextField!
+    @IBOutlet weak var sixAMTextField: UITextField!
+    @IBOutlet weak var nineAMTextField: UITextField!
+    @IBOutlet weak var elevenAMTextField: UITextField!
+    @IBOutlet weak var twoPMTextField: UITextField!
+    @IBOutlet weak var sixPMTextField: UITextField!
+    @IBOutlet weak var tenPMTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

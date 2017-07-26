@@ -21,6 +21,7 @@ class NoYesCalcViewController: UIViewController {
         super.viewDidLoad()
         
         numberOfUnitsLabel.textColor = UIColor.white
+        findTotalUnitsButton.layer.cornerRadius = 8
     }
     
     override func didReceiveMemoryWarning() {
