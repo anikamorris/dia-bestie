@@ -703,6 +703,9 @@
                                 <color key="backgroundColor" red="0.41656976940000001" green="0.94327098129999998" blue="0.87749713659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Find Total Units"/>
+                                <connections>
+                                    <action selector="findTotalUnitsButtonTapped:" destination="8UP-Xr-JD2" eventType="touchUpInside" id="kNa-qI-8DF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gX-mz-I2a">
                                 <rect key="frame" x="76" y="597" width="223" height="35"/>
@@ -780,6 +783,11 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="oat-Gf-uwI" id="OFp-OO-fZq"/>
+                        <outlet property="currentBGTextField" destination="oCb-qT-7Kw" id="IYI-DY-Vh2"/>
+                        <outlet property="findTotalUnitsButton" destination="MjN-tk-3pH" id="zRi-Hd-yo9"/>
+                        <outlet property="hoursSinceTextField" destination="QcW-fb-YBm" id="6l4-LL-9RJ"/>
+                        <outlet property="numberOfUnitsLabel" destination="1gX-mz-I2a" id="GET-Hp-wOk"/>
+                        <outlet property="previousUnitsTextField" destination="6c1-ED-PwJ" id="gsa-L5-SPH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EF5-OC-ewv" userLabel="First Responder" sceneMemberID="firstResponder"/>

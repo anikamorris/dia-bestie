@@ -12,13 +12,25 @@ import UIKit
 class NoNoCalcViewController: UIViewController {
     
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var currentBGTextField: UITextField!
+    @IBOutlet weak var hoursSinceTextField: UITextField!
+    @IBOutlet weak var previousUnitsTextField: UITextField!
+    @IBOutlet weak var findTotalUnitsButton: UIButton!
+    @IBOutlet weak var numberOfUnitsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        numberOfUnitsLabel.textColor = UIColor.white
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        numberOfUnitsLabel.textColor = UIColor.white
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func findTotalUnitsButtonTapped(_ sender: UIButton) {
+    }
 }
