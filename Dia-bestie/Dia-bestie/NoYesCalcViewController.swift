@@ -19,10 +19,14 @@ class NoYesCalcViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        numberOfUnitsLabel.textColor = UIColor.white
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
+        numberOfUnitsLabel.textColor = UIColor.white
     }
     
     @IBAction func findTotalUnitsButtonTapped(_ sender: UIButton) {
