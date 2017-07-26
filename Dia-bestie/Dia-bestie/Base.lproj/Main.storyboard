@@ -595,6 +595,9 @@
                                 <color key="backgroundColor" red="0.41656976940000001" green="0.94327098129999998" blue="0.87749713659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Find Total Units"/>
+                                <connections>
+                                    <action selector="findTotalUnitsButtonTapped:" destination="ZI8-DM-tOK" eventType="touchUpInside" id="0WZ-bg-0xJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHb-Dc-2C4">
                                 <rect key="frame" x="76" y="597" width="223" height="35"/>
@@ -631,6 +634,10 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="bw5-8s-RdE" id="3y2-K4-37m"/>
+                        <outlet property="carbsTextField" destination="iOw-Ec-n92" id="3Yn-lK-dBp"/>
+                        <outlet property="currentBGTextField" destination="cGm-JW-rnj" id="U8Y-VP-OgC"/>
+                        <outlet property="findTotalUnitsButton" destination="9cb-RT-xoO" id="PfV-wh-asH"/>
+                        <outlet property="numberOfUnitsLabel" destination="SHb-Dc-2C4" id="bMQ-4p-72u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGf-oP-sIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
