@@ -82,7 +82,7 @@
                                 <rect key="frame" x="0.0" y="261.5" width="375" height="405.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="kwJ-qM-ncd" userLabel="Times Stack View">
-                                        <rect key="frame" x="40" y="30.5" width="80" height="339"/>
+                                        <rect key="frame" x="40" y="6.5" width="80" height="339"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkS-Pg-aQ4">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
@@ -138,7 +138,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RSu-7o-cfn" userLabel="Ratio Input Stack View">
-                                        <rect key="frame" x="305" y="30.5" width="40" height="345"/>
+                                        <rect key="frame" x="305" y="6.5" width="40" height="345"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFd-f8-1x9">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
@@ -226,7 +226,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-Uo-sfO" userLabel="1 : Stack View">
-                                        <rect key="frame" x="275" y="30.5" width="22" height="339"/>
+                                        <rect key="frame" x="275" y="6.5" width="22" height="339"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPJ-io-GAS">
                                                 <rect key="frame" x="0.0" y="0.0" width="22" height="24"/>
@@ -282,7 +282,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6U-uN-PKG">
-                                        <rect key="frame" x="0.0" y="379.5" width="375" height="26"/>
+                                        <rect key="frame" x="0.0" y="355.5" width="375" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="Calculate">
@@ -298,7 +298,7 @@
                                     <constraint firstItem="q6U-uN-PKG" firstAttribute="centerX" secondItem="Xc4-OW-8el" secondAttribute="centerX" id="4co-1w-bAG"/>
                                     <constraint firstItem="q6U-uN-PKG" firstAttribute="top" secondItem="XWP-Uo-sfO" secondAttribute="bottom" constant="10" id="DDh-nL-JY1"/>
                                     <constraint firstItem="RSu-7o-cfn" firstAttribute="leading" secondItem="XWP-Uo-sfO" secondAttribute="trailing" constant="8" id="Gel-C1-jC6"/>
-                                    <constraint firstAttribute="bottom" secondItem="kwJ-qM-ncd" secondAttribute="bottom" constant="36" id="IXv-Eb-Wj4"/>
+                                    <constraint firstAttribute="bottom" secondItem="kwJ-qM-ncd" secondAttribute="bottom" constant="60" id="IXv-Eb-Wj4"/>
                                     <constraint firstItem="q6U-uN-PKG" firstAttribute="top" secondItem="kwJ-qM-ncd" secondAttribute="bottom" constant="10" id="LV9-fw-t5m"/>
                                     <constraint firstItem="q6U-uN-PKG" firstAttribute="width" secondItem="Xc4-OW-8el" secondAttribute="width" id="RpA-Va-5nn"/>
                                     <constraint firstAttribute="bottom" secondItem="q6U-uN-PKG" secondAttribute="bottom" id="Zo2-2K-ag8"/>
@@ -307,11 +307,28 @@
                                     <constraint firstItem="kwJ-qM-ncd" firstAttribute="leading" secondItem="Xc4-OW-8el" secondAttribute="leading" constant="40" id="jOl-2u-vMs"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWn-2Y-HNn">
+                                <rect key="frame" x="0.0" y="231" width="375" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Carb Ratios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlc-FB-nwv">
+                                        <rect key="frame" x="124" y="1" width="127" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Xc4-OW-8el" firstAttribute="top" secondItem="W1i-wa-Cpa" secondAttribute="bottom" priority="750" constant="50" id="162-nP-aAz"/>
+                            <constraint firstItem="aWn-2Y-HNn" firstAttribute="top" secondItem="W1i-wa-Cpa" secondAttribute="bottom" constant="20" id="1fE-VX-yS1"/>
+                            <constraint firstItem="Xc4-OW-8el" firstAttribute="top" secondItem="aWn-2Y-HNn" secondAttribute="bottom" id="47H-2h-cDY"/>
                             <constraint firstItem="W1i-wa-Cpa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="AUF-9s-gDO"/>
+                            <constraint firstAttribute="trailing" secondItem="aWn-2Y-HNn" secondAttribute="trailing" id="Byt-R5-EXb"/>
+                            <constraint firstItem="aWn-2Y-HNn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EmS-53-39R"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xc4-OW-8el" secondAttribute="bottom" id="Fji-5W-RLO"/>
                             <constraint firstItem="W1i-wa-Cpa" firstAttribute="top" secondItem="LUF-tD-TtV" secondAttribute="bottom" constant="20" id="ITb-EO-0OP"/>
                             <constraint firstAttribute="trailing" secondItem="Xc4-OW-8el" secondAttribute="trailing" id="Mv1-bI-kAk"/>
