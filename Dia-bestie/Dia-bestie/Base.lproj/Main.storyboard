@@ -1023,6 +1023,9 @@
                                 <color key="backgroundColor" red="0.41656976938247681" green="0.9432709813117981" blue="0.87749713659286499" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Find Total Units"/>
+                                <connections>
+                                    <action selector="findTotalUnitsButtonTapped:" destination="a4k-26-0c7" eventType="touchUpInside" id="3SY-B5-55Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many units did you use in your previous correction?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXa-EV-P7p">
                                 <rect key="frame" x="26" y="337" width="283" height="41"/>
@@ -1108,6 +1111,12 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="5MG-gZ-fbK" id="LXq-JI-7DJ"/>
+                        <outlet property="carbsTextField" destination="SpG-GM-kXe" id="EKT-oY-3bp"/>
+                        <outlet property="currentBGTextField" destination="sju-ts-bXa" id="0ZZ-Lp-MeD"/>
+                        <outlet property="findTotalUnitsButton" destination="lpR-1l-ZEw" id="k3k-G2-XRg"/>
+                        <outlet property="hoursSinceTextField" destination="HZb-Dj-9qk" id="9r8-Nj-Hqy"/>
+                        <outlet property="numberOfUnitsLabel" destination="dve-HN-MkW" id="KhV-JH-Bjf"/>
+                        <outlet property="previousUnitsTextField" destination="XXa-6u-U18" id="eJE-cb-bRK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYg-1E-SqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
