@@ -320,6 +320,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-bf-hfJ">
+                                <rect key="frame" x="299" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qda-YO-EaN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -334,10 +341,14 @@
                             <constraint firstAttribute="trailing" secondItem="Xc4-OW-8el" secondAttribute="trailing" id="Mv1-bI-kAk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LUF-tD-TtV" secondAttribute="trailing" constant="115" id="Pr1-PS-Ag5"/>
                             <constraint firstItem="LUF-tD-TtV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="115" id="RaV-Og-D0Z"/>
+                            <constraint firstItem="Vdz-bf-hfJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Z0j-PI-XrB"/>
                             <constraint firstItem="LUF-tD-TtV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ZSp-UP-p8H"/>
                             <constraint firstAttribute="trailing" secondItem="Xha-cm-t8y" secondAttribute="trailing" constant="30" id="afn-dD-jQ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vdz-bf-hfJ" secondAttribute="trailing" constant="14" id="at2-UK-ubc"/>
+                            <constraint firstItem="Vdz-bf-hfJ" firstAttribute="leading" secondItem="LUF-tD-TtV" secondAttribute="trailing" constant="55" id="foV-Ah-Uk4"/>
                             <constraint firstItem="Xc4-OW-8el" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uK5-8g-sZK"/>
                             <constraint firstItem="Xha-cm-t8y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="vqC-i5-x1p"/>
+                            <constraint firstItem="Xha-cm-t8y" firstAttribute="top" secondItem="Vdz-bf-hfJ" secondAttribute="bottom" constant="32" id="yZu-kc-ZUZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3cT-yi-B4b"/>

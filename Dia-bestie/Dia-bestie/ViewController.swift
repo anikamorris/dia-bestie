@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -45,9 +47,34 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        guard let firUser = Auth.auth().currentUser,
+            let isf = isfTextField.text,
+            !isf.isEmpty else { return }
+        
+        let isfRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        isfRef.updateChildValues(["isf": Int(isf)!])
+        
+        
+        guard let targetBG = targetBGTextField.text,
+            !targetBG.isEmpty else { return }
+        
+        let targetBGRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        targetBGRef.updateChildValues(["targetBG": Int(targetBG)!])
+        
+        
+        guard let insulinDuration = insulinDurationTextField.text,
+            !insulinDuration.isEmpty else { return }
+        
+        let insulinDurationRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        insulinDurationRef.updateChildValues(["insulinDuration": Int(insulinDuration)!])
+    }
+    
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: Constansts.Segue.toCorrections, sender: self)
     }
-
 }
 
