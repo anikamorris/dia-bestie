@@ -29,8 +29,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeys))
+        self.view.addGestureRecognizer(tapGestureRecognizer)
         calculateButton.layer.cornerRadius = 6
+    }
+    
+    func dismissKeys() {
+        self.view.endEditing(true)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -48,6 +53,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        // set ISF
         guard let firUser = Auth.auth().currentUser,
             let isf = isfTextField.text,
             !isf.isEmpty else { return }
@@ -56,7 +63,7 @@ class ViewController: UIViewController {
         
         isfRef.updateChildValues(["isf": Int(isf)!])
         
-        
+        // set target blood sugar
         guard let targetBG = targetBGTextField.text,
             !targetBG.isEmpty else { return }
         
@@ -64,13 +71,16 @@ class ViewController: UIViewController {
         
         targetBGRef.updateChildValues(["targetBG": Int(targetBG)!])
         
-        
+        // set duration of insulin
         guard let insulinDuration = insulinDurationTextField.text,
             !insulinDuration.isEmpty else { return }
         
         let insulinDurationRef = Database.database().reference().child("users").child(firUser.uid)
         
         insulinDurationRef.updateChildValues(["insulinDuration": Int(insulinDuration)!])
+        
+        
+        print("everything is set")
     }
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
