@@ -27,11 +27,11 @@ class EatingTwoViewController: UIViewController {
     }
     
     @IBAction func yesButtonTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: Constansts.Segue.toNoYesCalc, sender: self)
+        self.performSegue(withIdentifier: Constants.Segue.toNoYesCalc, sender: self)
     }
     
     @IBAction func noButtonTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: Constansts.Segue.toNoNoCalc, sender: self)
+        self.performSegue(withIdentifier: Constants.Segue.toNoNoCalc, sender: self)
     }
     
     @IBAction func unwindToEatingTwoViewController(_ segue: UIStoryboardSegue) {

@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeys))
         self.view.addGestureRecognizer(tapGestureRecognizer)
+        
         calculateButton.layer.cornerRadius = 6
     }
     
@@ -84,7 +85,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: Constansts.Segue.toCorrections, sender: self)
+        self.performSegue(withIdentifier: Constants.Segue.toCorrections, sender: self)
     }
 }
 

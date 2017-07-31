@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Constansts {
+struct Constants {
     
     struct Segue {
         static let toDisplayName = "toDisplayName"
@@ -20,4 +20,16 @@ struct Constansts {
         static let toNoYesCalc = "toNoYesCalc"
         static let toNoNoCalc = "toNoNoCalc"
     }
+    
+    struct UserDefaults {
+        static let currentUser = "currentUser"
+        static let uid = "uid"
+        static let displayName = "displayName"
+        static let isf = "isf"
+        static let insulinDuration = "insulinDuration"
+        static let targetBG = "targetBG"
+    }
 }
+
+
+

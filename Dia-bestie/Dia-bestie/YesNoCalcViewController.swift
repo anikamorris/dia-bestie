@@ -19,10 +19,17 @@ class YesNoCalcViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeys))
+        self.view.addGestureRecognizer(tapGestureRecognizer)
+        
         numberOfUnitsLabel.textColor = UIColor.white
         findTotalUnitsButton.layer.cornerRadius = 8
     }
     
+    func dismissKeys() {
+        self.view.endEditing(true)
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         numberOfUnitsLabel.textColor = UIColor.white
     }
@@ -32,6 +39,8 @@ class YesNoCalcViewController: UIViewController {
     }
     
     @IBAction func findTotalUnitsButtonTapped(_ sender: UIButton) {
+        numberOfUnitsLabel.textColor = UIColor.darkGray
+
     }
     
 }

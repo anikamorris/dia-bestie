@@ -35,7 +35,9 @@ class DisplayNameViewController: UIViewController {
         UserService.create(firUser, displayName: displayName) { (user) in
             guard let user = user else { return }
             
+//            User.setCurrent(user, writeToUserDefaults: true)
             User.setCurrent(user)
+
             
             let initialViewController = UIStoryboard.initialViewController(for: .main)
             self.view.window?.rootViewController = initialViewController
