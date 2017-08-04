@@ -80,7 +80,70 @@ class ViewController: UIViewController {
         
         insulinDurationRef.updateChildValues(["insulinDuration": Int(insulinDuration)!])
         
+        // set midnight carb ratio
+        guard let midnightRatio = midnightRatioTextField.text,
+            !midnightRatio.isEmpty else { return }
         
+        let midnightRatioRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        midnightRatioRef.updateChildValues(["midnightRatio": Int(midnightRatio)!])
+        
+        // set 2am carb ratio
+        guard let twoAM = twoAMTextField.text,
+            !twoAM.isEmpty else { return }
+        
+        let twoAMRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        twoAMRef.updateChildValues(["twoAM": Int(twoAM)!])
+        
+        // set 6am carb ratio
+        guard let sixAM = sixAMTextField.text,
+            !sixAM.isEmpty else { return }
+        
+        let sixAMRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        sixAMRef.updateChildValues(["sixAM": Int(sixAM)!])
+
+        // set 9am carb ratio
+        guard let nineAM = nineAMTextField.text,
+            !nineAM.isEmpty else { return }
+        
+        let nineAMRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        nineAMRef.updateChildValues(["nineAM": Int(nineAM)!])
+        
+        // set 11am carb ratio
+        guard let elevenAM = elevenAMTextField.text,
+            !elevenAM.isEmpty else { return }
+        
+        let elevenAMRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        elevenAMRef.updateChildValues(["elevenAM": Int(elevenAM)!])
+        
+        // set 2pm carb ratio
+        guard let twoPM = twoPMTextField.text,
+            !twoPM.isEmpty else { return }
+        
+        let twoPMRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        twoPMRef.updateChildValues(["twoPM": Int(twoPM)!])
+        
+        // set 6pm carb ratio
+        guard let sixPM = sixPMTextField.text,
+            !sixPM.isEmpty else { return }
+        
+        let sixPMRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        sixPMRef.updateChildValues(["sixPM": Int(sixPM)!])
+        
+        // set 10pm carb ratio
+        guard let tenPM = tenPMTextField.text,
+            !tenPM.isEmpty else { return }
+        
+        let tenPMRef = Database.database().reference().child("users").child(firUser.uid)
+        
+        tenPMRef.updateChildValues(["tenPM": Int(tenPM)!])
+       
         print("everything is set")
     }
     

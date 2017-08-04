@@ -28,6 +28,14 @@ struct Constants {
         static let isf = "isf"
         static let insulinDuration = "insulinDuration"
         static let targetBG = "targetBG"
+        static let midnightRatio = "midnightRatio"
+        static let twoAM = "twoAM"
+        static let sixAM = "sixAM"
+        static let nineAM = "nineAM"
+        static let elevenAM = "elevenAM"
+        static let twoPM = "twoPM"
+        static let sixPM = "sixPM"
+        static let tenPM = "tenPM"
     }
 }
 

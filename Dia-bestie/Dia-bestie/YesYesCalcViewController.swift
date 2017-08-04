@@ -43,31 +43,84 @@ class YesYesCalcViewController: UIViewController {
     }
     
     @IBAction func findTotalUnitsButtonTapped(_ sender: UIButton) {
-        numberOfUnitsLabel.textColor = UIColor.darkGray
+        numberOfUnitsLabel.textColor = UIColor(
+            red: 0x33/255,
+            green: 0x33/255,
+            blue: 0x33/255,
+            alpha: 1.0)
+        
+        guard let carbs = carbsTextField.text,
+            !carbs.isEmpty else { return }
+        let carb = Double(carbs)
+        
+        guard let currentsBG = currentBGTextField.text,
+            !currentsBG.isEmpty else { return }
+        let currentBG = Double(currentsBG)
+        
+        guard let previousUnits = previousUnitsTextField.text,
+            !previousUnits.isEmpty else { return }
+        let previousUnit = Double(previousUnits)
+        
+        guard let hoursSince = hoursSinceTextField.text,
+            !hoursSince.isEmpty else { return }
+        let hourSince = Double(hoursSince)
+        
+        numberOfUnitsLabel.text = ("\(foodUnits(carb: carb!, currentBG: currentBG!, previousUnit: previousUnit!, hourSince: hourSince!)) units")
         
     }
     
-//    init?(snapshot: DataSnapshot) {
-//        guard let dict = snapshot.value as? [String : Any],
-//            let targetBG = dict["target"] as? Double,
-//            let isf = dict["isf"] as? Double,
-//            let insulinDuration = dict["insulinDuration"] as? Double
-//            else { return nil }
-//        
-//        self.targetBG = targetBG
-//        self.isf = isf
-//        self.insulinDuration = insulinDuration
-//    }
-//    
-//    func snackCorrection(units: Double, hours: Double, current: Double, target: Double, isf: Double, duration: Double) -> Double {
-//        
-//        
-//        
-//        let units = Double(previousUnitsTextField.text!)
-//        let hours = Double(hoursSinceTextField.text!)
-//        let current = Double(currentBGTextField.text!)
-//        let target = Double()
-//        }
+    let isf = User.current.stats.isf
+    let insulinDuration = User.current.stats.insulinDuration
+    let targetBG = User.current.stats.targetBG
+    let midnightRatio = User.current.stats.midnightRatio
+    let twoAM = User.current.stats.twoAM
+    let sixAM = User.current.stats.sixAM
+    let nineAM = User.current.stats.nineAM
+    let elevenAM = User.current.stats.elevenAM
+    let twoPM = User.current.stats.twoPM
+    let sixPM = User.current.stats.sixPM
+    let tenPM = User.current.stats.tenPM
+    
+    func foodUnits(carb: Double, currentBG: Double, previousUnit: Double, hourSince: Double) -> Double {
+        
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        
+        var ratio: Int
+        
+        if hour < 2 {
+            ratio = midnightRatio
+        } else if hour < 6 {
+            ratio = twoAM
+        } else if hour < 9 {
+            ratio = sixAM
+        } else if hour < 11 {
+            ratio = nineAM
+        } else if hour < 14 {
+            ratio = elevenAM
+        } else if hour < 18 {
+            ratio = twoPM
+        } else if hour < 22 {
+            ratio = sixPM
+        } else {
+            ratio = tenPM
+        }
+        
+        
+        
+        let foodUnits = carb / Double(ratio)
+        print(ratio)
+        let correctionUnits = ((currentBG - Double(targetBG)) / Double(isf)) - (previousUnit - (previousUnit * (hourSince / Double(insulinDuration))))
+        print(foodUnits)
+        print(correctionUnits)
+        
+        var totalUnits: Double
+        totalUnits = foodUnits + correctionUnits
+        totalUnits = (round(totalUnits * 10)) / 10
+        
+        return totalUnits
+    }
 }
 
 

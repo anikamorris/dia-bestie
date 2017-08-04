@@ -13,8 +13,6 @@ class NoNoCalcViewController: UIViewController {
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var currentBGTextField: UITextField!
-    @IBOutlet weak var hoursSinceTextField: UITextField!
-    @IBOutlet weak var previousUnitsTextField: UITextField!
     @IBOutlet weak var findTotalUnitsButton: UIButton!
     @IBOutlet weak var numberOfUnitsLabel: UILabel!
     
@@ -41,7 +39,34 @@ class NoNoCalcViewController: UIViewController {
     }
     
     @IBAction func findTotalUnitsButtonTapped(_ sender: UIButton) {
-        numberOfUnitsLabel.textColor = UIColor.darkGray
-
+        numberOfUnitsLabel.textColor = UIColor(
+            red: 0x33/255,
+            green: 0x33/255,
+            blue: 0x33/255,
+            alpha: 1.0)
+        
+        guard let currentsBG = currentBGTextField.text,
+            !currentsBG.isEmpty else { return }
+        
+        let currentBG = Int(currentsBG)
+        
+        numberOfUnitsLabel.text = ("\(correctionUnits(currentBG: currentBG!)) units")
+        
     }
+    
+    let isf = User.current.stats.isf
+    let targetBG = User.current.stats.targetBG
+    
+    func correctionUnits(currentBG: Int) -> Double {
+      
+        let correctionUnits = Double(currentBG - 100) / Double(isf)
+        print(correctionUnits)
+        
+        var totalUnits: Double
+        totalUnits = correctionUnits
+        totalUnits = (round(totalUnits * 10)) / 10
+        
+        return totalUnits
+    }
+
 }

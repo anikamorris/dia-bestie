@@ -15,32 +15,29 @@ class User: NSObject {
     
     let uid: String
     let displayName: String
-//    let targetBG: Int
-//    let insulinDuration: Int
-//    let isf: Int
+    let stats: Stats
+
     
     // MARK: - Init
     
-    required init?(coder aDecoder: NSCoder) {
-        guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
-            let displayName = aDecoder.decodeObject(forKey: Constants.UserDefaults.displayName) as? String
-//            let targetBG = aDecoder.decodeObject(forKey: Constants.UserDefaults.targetBG) as? Int,
-//            let insulinDuration = aDecoder.decodeObject(forKey: Constants.UserDefaults.insulinDuration) as? Int,
-//            let isf = aDecoder.decodeObject(forKey: Constants.UserDefaults.isf) as? Int
-            else { return nil }
-        
-        self.uid = uid
-        self.displayName = displayName
-//        self.targetBG = targetBG
-//        self.insulinDuration = insulinDuration
-//        self.isf = isf
-        
-        super.init()
-    }
+//    required init?(coder aDecoder: NSCoder) {
+//        guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
+//            let displayName = aDecoder.decodeObject(forKey: Constants.UserDefaults.displayName) as? String
+//            else { return nil }
+//        
+//        self.uid = uid
+//        self.displayName = displayName
+////        self.targetBG = targetBG
+////        self.insulinDuration = insulinDuration
+////        self.isf = isf
+//        
+//        super.init()
+//    }
     
-    init(uid: String, displayName: String, targetBG: Int, insulinDuration: Int, isf: Int) {
+    init(uid: String, displayName: String, stats: Stats) {
         self.uid = uid
         self.displayName = displayName
+        self.stats = stats
 //        self.targetBG = targetBG
 //        self.insulinDuration = insulinDuration
 //        self.isf = isf
@@ -50,19 +47,16 @@ class User: NSObject {
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
             let displayName = dict["displayName"] as? String
-//            let targetBG = dict["targetBG"] as? Int,
-//            let insulinDuration = dict["insulinDuration"] as? Int,
-//            let isf = dict["isf"] as? Int
+
             else { return nil }
         
         self.uid = snapshot.key
         self.displayName = displayName
-//        self.targetBG = targetBG
-//        self.insulinDuration = insulinDuration
-//        self.isf = isf
+        self.stats = Stats(snapshot: snapshot)!
+
     }
     
-   
+ 
     
     // MARK: - Singleton
 
@@ -92,12 +86,12 @@ class User: NSObject {
     
 }
 
-extension User: NSCoding {
-    func encode(with aCoder: NSCoder) {
-        aCoder.encode(uid, forKey: Constants.UserDefaults.uid)
-        aCoder.encode(displayName, forKey: Constants.UserDefaults.displayName)
-//        aCoder.encode(targetBG, forKey: Constants.UserDefaults.targetBG)
-    }
-}
+//extension User: NSCoding {
+//    func encode(with aCoder: NSCoder) {
+//        aCoder.encode(uid, forKey: Constants.UserDefaults.uid)
+//        aCoder.encode(displayName, forKey: Constants.UserDefaults.displayName)
+////        aCoder.encode(targetBG, forKey: Constants.UserDefaults.targetBG)
+//    }
+//}
 
   

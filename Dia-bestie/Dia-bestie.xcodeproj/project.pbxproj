@@ -26,6 +26,7 @@
 		CF72574D1F26B13200D1BEF6 /* YesNoCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72574C1F26B13200D1BEF6 /* YesNoCalcViewController.swift */; };
 		CF72574F1F26B14000D1BEF6 /* NoYesCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72574E1F26B14000D1BEF6 /* NoYesCalcViewController.swift */; };
 		CF7257511F26B14D00D1BEF6 /* NoNoCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7257501F26B14D00D1BEF6 /* NoNoCalcViewController.swift */; };
+		CF7257531F328B2700D1BEF6 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7257521F328B2700D1BEF6 /* Stats.swift */; };
 		CFF05A7D1F22749A00C4A5D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF05A7C1F22749A00C4A5D5 /* User.swift */; };
 		CFF05A831F22AFF900C4A5D5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF05A821F22AFF900C4A5D5 /* UserService.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		CF72574C1F26B13200D1BEF6 /* YesNoCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YesNoCalcViewController.swift; sourceTree = "<group>"; };
 		CF72574E1F26B14000D1BEF6 /* NoYesCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoYesCalcViewController.swift; sourceTree = "<group>"; };
 		CF7257501F26B14D00D1BEF6 /* NoNoCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoNoCalcViewController.swift; sourceTree = "<group>"; };
+		CF7257521F328B2700D1BEF6 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		CFF05A7C1F22749A00C4A5D5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CFF05A821F22AFF900C4A5D5 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				CFF05A7C1F22749A00C4A5D5 /* User.swift */,
+				CF7257521F328B2700D1BEF6 /* Stats.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				CF72574F1F26B14000D1BEF6 /* NoYesCalcViewController.swift in Sources */,
 				CF7257471F26B0ED00D1BEF6 /* EatingOneViewController.swift in Sources */,
 				CF72573E1F26790300D1BEF6 /* DisplayNameViewController.swift in Sources */,
+				CF7257531F328B2700D1BEF6 /* Stats.swift in Sources */,
 				CF7257451F26B09300D1BEF6 /* CorrectionsViewController.swift in Sources */,
 				CFF05A7D1F22749A00C4A5D5 /* User.swift in Sources */,
 				CF7257511F26B14D00D1BEF6 /* NoNoCalcViewController.swift in Sources */,

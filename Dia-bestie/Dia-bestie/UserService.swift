@@ -34,8 +34,11 @@ struct UserService {
             }
             
             ref.observeSingleEvent(of: .value, with: { (snapshot) in
-                let user = User(snapshot: snapshot)
-                completion(user)
+                if let user = User(snapshot: snapshot) {
+                    completion(user)
+                } else {
+                    completion(nil)
+                }
             })
         }
     }
