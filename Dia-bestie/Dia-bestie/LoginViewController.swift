@@ -16,14 +16,33 @@ typealias FIRUser = FirebaseAuth.User
 
 class LoginViewController: UIViewController { 
     
+    @IBOutlet weak var enterEmailTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var taglineLabel: UILabel!
+    @IBOutlet weak var logoImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginButton.layer.cornerRadius = 15
+        loginButton.layer.cornerRadius = 22.5
+        enterEmailTextField.layer.cornerRadius = 22.5
+        
+        enterEmailTextField.attributedPlaceholder =
+            NSAttributedString(string: "Enter Email", attributes:[NSForegroundColorAttributeName : UIColor.cyan])
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeys))
+        self.view.addGestureRecognizer(tapGestureRecognizer)
+        
     }
     
+    func dismissKeys() {
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func enterEmailTextFieldPrimaryActionTriggered(_ sender: Any) {
+        dismissKeys()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -37,6 +56,8 @@ class LoginViewController: UIViewController {
         
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
+        
+        
     }
 
 }

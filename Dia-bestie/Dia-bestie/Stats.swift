@@ -11,7 +11,6 @@ import FirebaseDatabase.FIRDataSnapshot
 
 class Stats: NSObject {
     
-    
     let targetBG: Int
     let insulinDuration: Int
     let isf: Int

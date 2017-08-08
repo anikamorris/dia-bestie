@@ -18,8 +18,8 @@ class EatingOneViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        yesButton.layer.cornerRadius = 5
-        noButton.layer.cornerRadius = 5
+        yesButton.layer.cornerRadius = 62.5
+        noButton.layer.cornerRadius = 62.5
     }
     
     override func didReceiveMemoryWarning() {
