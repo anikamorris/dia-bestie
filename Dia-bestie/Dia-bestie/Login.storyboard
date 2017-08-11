@@ -22,69 +22,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4f-Lk-DMb">
-                                <rect key="frame" x="46" y="422" width="283" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qbP-CF-xBH">
+                                <rect key="frame" x="16" y="459" width="343" height="108"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ww-o9-beT">
+                                        <rect key="frame" x="20" y="0.0" width="303" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpButtonTapped:" destination="Aoo-hd-oIe" eventType="touchUpInside" id="jlH-9a-qHo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trA-8C-R8O">
+                                        <rect key="frame" x="20" y="64" width="303" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logInButtonTapped:" destination="Aoo-hd-oIe" eventType="touchUpInside" id="3gB-U7-6jl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="OUu-L2-EjE"/>
+                                    <constraint firstItem="3ww-o9-beT" firstAttribute="height" secondItem="trA-8C-R8O" secondAttribute="height" id="HqT-5H-815"/>
+                                    <constraint firstAttribute="trailing" secondItem="trA-8C-R8O" secondAttribute="trailing" constant="20" id="Nqg-2z-pia"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ww-o9-beT" secondAttribute="trailing" constant="20" id="PZF-tB-jL9"/>
+                                    <constraint firstItem="3ww-o9-beT" firstAttribute="leading" secondItem="qbP-CF-xBH" secondAttribute="leading" constant="20" id="Wnt-Hg-apY"/>
+                                    <constraint firstItem="trA-8C-R8O" firstAttribute="leading" secondItem="qbP-CF-xBH" secondAttribute="leading" constant="20" id="xYX-1L-Vct"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
-                                <state key="normal" title="Sign Up or Log In">
-                                    <color key="titleColor" red="0.0" green="0.9409179688" blue="0.84223090280000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButtonTapped:" destination="Aoo-hd-oIe" eventType="touchUpInside" id="Q3N-hE-ahv"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Enter Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rFQ-C4-YH5">
-                                <rect key="frame" x="46" y="337" width="283" height="45"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
-                                <connections>
-                                    <action selector="enterEmailTextFieldPrimaryActionTriggered:" destination="Aoo-hd-oIe" eventType="primaryActionTriggered" id="i1g-px-LlM"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HAj-kt-tEa">
-                                <rect key="frame" x="46" y="80" width="283" height="149.5"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-4p-6Gv">
-                                <rect key="frame" x="46" y="249.5" width="283" height="27.5"/>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="20"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate the easy way." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-4p-6Gv">
+                                <rect key="frame" x="46" y="234.5" width="283" height="32.5"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dia-Bestie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwQ-Qo-5lh">
+                                <rect key="frame" x="52" y="161.5" width="270" height="74.5"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.41960784313725491" green="0.94509803921568625" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xwQ-Qo-5lh" secondAttribute="trailing" constant="37" id="0cZ-EA-EaW"/>
                             <constraint firstItem="ekq-4p-6Gv" firstAttribute="leading" secondItem="73F-hg-gTM" secondAttribute="leadingMargin" constant="30" id="0n3-3p-GYl"/>
-                            <constraint firstItem="ekq-4p-6Gv" firstAttribute="top" secondItem="HAj-kt-tEa" secondAttribute="bottom" constant="20" id="10P-Q0-YzC"/>
-                            <constraint firstItem="ekq-4p-6Gv" firstAttribute="top" secondItem="HAj-kt-tEa" secondAttribute="bottom" constant="20" id="1BN-SV-Wkj"/>
-                            <constraint firstItem="rFQ-C4-YH5" firstAttribute="height" secondItem="Z4f-Lk-DMb" secondAttribute="height" id="3ii-sW-Pd5"/>
-                            <constraint firstItem="Z4f-Lk-DMb" firstAttribute="centerX" secondItem="73F-hg-gTM" secondAttribute="centerX" id="6ei-Ud-wR1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HAj-kt-tEa" secondAttribute="trailing" constant="30" id="KwW-31-6tc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qbP-CF-xBH" secondAttribute="trailing" id="6nj-zo-oHO"/>
+                            <constraint firstItem="mFj-QO-vNF" firstAttribute="top" secondItem="qbP-CF-xBH" secondAttribute="bottom" constant="100" id="AbE-el-eEd"/>
+                            <constraint firstItem="xwQ-Qo-5lh" firstAttribute="leading" secondItem="73F-hg-gTM" secondAttribute="leadingMargin" constant="36" id="EpP-WZ-60x"/>
+                            <constraint firstItem="xwQ-Qo-5lh" firstAttribute="top" secondItem="iMf-4l-P83" secondAttribute="bottom" constant="141.5" id="Pdf-a2-XQN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ekq-4p-6Gv" secondAttribute="trailing" constant="30" id="SUG-AM-KXc"/>
-                            <constraint firstItem="Z4f-Lk-DMb" firstAttribute="top" secondItem="rFQ-C4-YH5" secondAttribute="bottom" constant="40" id="TvL-mW-JYu"/>
-                            <constraint firstItem="rFQ-C4-YH5" firstAttribute="top" secondItem="ekq-4p-6Gv" secondAttribute="bottom" constant="60" id="U7R-V4-uNd"/>
-                            <constraint firstItem="mFj-QO-vNF" firstAttribute="top" secondItem="Z4f-Lk-DMb" secondAttribute="bottom" constant="200" id="Ux3-D9-fXt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rFQ-C4-YH5" secondAttribute="trailing" constant="30" id="V8N-qz-kOP"/>
-                            <constraint firstItem="HAj-kt-tEa" firstAttribute="leading" secondItem="73F-hg-gTM" secondAttribute="leadingMargin" constant="30" id="VtX-Xc-jYW"/>
-                            <constraint firstItem="Z4f-Lk-DMb" firstAttribute="leading" secondItem="73F-hg-gTM" secondAttribute="leadingMargin" constant="30" id="Whx-5R-uOj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Z4f-Lk-DMb" secondAttribute="trailing" constant="30" id="qNR-6V-syc"/>
-                            <constraint firstItem="rFQ-C4-YH5" firstAttribute="leading" secondItem="73F-hg-gTM" secondAttribute="leadingMargin" constant="30" id="tdY-Nd-pMz"/>
-                            <constraint firstItem="HAj-kt-tEa" firstAttribute="top" secondItem="iMf-4l-P83" secondAttribute="bottom" constant="60" id="whJ-p3-5bR"/>
+                            <constraint firstItem="qbP-CF-xBH" firstAttribute="leading" secondItem="73F-hg-gTM" secondAttribute="leadingMargin" id="WnZ-hg-her"/>
+                            <constraint firstItem="ekq-4p-6Gv" firstAttribute="top" secondItem="xwQ-Qo-5lh" secondAttribute="bottom" constant="-1.5" id="cIb-YB-Ysf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KjN-qq-MGc"/>
                     <connections>
-                        <outlet property="enterEmailTextField" destination="rFQ-C4-YH5" id="G0O-zM-Y1T"/>
-                        <outlet property="loginButton" destination="Z4f-Lk-DMb" id="8GO-AV-H6r"/>
-                        <outlet property="logoImage" destination="HAj-kt-tEa" id="Im8-wB-k5u"/>
+                        <outlet property="logInButton" destination="trA-8C-R8O" id="iqd-0F-dwZ"/>
+                        <outlet property="signUpButton" destination="3ww-o9-beT" id="jQ0-NP-mSz"/>
                         <outlet property="taglineLabel" destination="ekq-4p-6Gv" id="txT-9T-aXn"/>
                         <segue destination="qzK-s7-bds" kind="show" identifier="toDisplayName" id="T2W-hb-uPk"/>
-                        <segue destination="cda-Nv-LfY" kind="show" identifier="toSignIn" id="Dco-50-HxS"/>
+                        <segue destination="cda-Nv-LfY" kind="show" identifier="toSignIn" id="6z3-pK-InF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wA-m7-ODk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -110,10 +114,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Upn-cv-bct">
-                                <rect key="frame" x="66" y="178" width="243" height="95"/>
+                                <rect key="frame" x="36" y="178" width="303" height="100"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Preferred Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wi-xs-S8M">
-                                        <rect key="frame" x="0.0" y="0.0" width="243" height="40"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Preferred Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9wi-xs-S8M">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="40"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -121,11 +125,14 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNm-rP-81i">
-                                        <rect key="frame" x="0.0" y="60" width="243" height="35"/>
+                                        <rect key="frame" x="0.0" y="60" width="303" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="LMn-43-Ha3"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="17"/>
                                         <state key="normal" title="Next">
                                             <color key="titleColor" red="0.41568627450980389" green="0.94509803921568625" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -139,15 +146,29 @@
                                     <constraint firstItem="tNm-rP-81i" firstAttribute="width" secondItem="9wi-xs-S8M" secondAttribute="width" id="gpR-4m-kMU"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sh-OR-zuZ">
+                                <rect key="frame" x="26" y="30" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="W6d-8f-sZU"/>
+                                    <constraint firstAttribute="width" constant="46" id="hrL-B1-e5C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="LuN-25-fU8" kind="unwind" unwindAction="unwindToLoginViewController:" id="U98-Lr-Zds"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="S4T-J3-dxk" firstAttribute="leading" secondItem="hDK-3I-FDX" secondAttribute="leadingMargin" constant="40" id="5Au-t5-df4"/>
                             <constraint firstItem="S4T-J3-dxk" firstAttribute="top" secondItem="gN8-hr-mMG" secondAttribute="bottom" constant="50" id="H35-NK-8JH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Upn-cv-bct" secondAttribute="trailing" constant="50" id="H8m-dj-vsG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Upn-cv-bct" secondAttribute="trailing" constant="20" id="H8m-dj-vsG"/>
                             <constraint firstItem="Upn-cv-bct" firstAttribute="top" secondItem="S4T-J3-dxk" secondAttribute="bottom" constant="40" id="hZu-SJ-QJc"/>
-                            <constraint firstItem="Upn-cv-bct" firstAttribute="leading" secondItem="hDK-3I-FDX" secondAttribute="leadingMargin" constant="50" id="r8r-Qq-h5z"/>
+                            <constraint firstItem="Upn-cv-bct" firstAttribute="leading" secondItem="hDK-3I-FDX" secondAttribute="leadingMargin" constant="20" id="r8r-Qq-h5z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="S4T-J3-dxk" secondAttribute="trailing" constant="40" id="vXt-7q-RWp"/>
+                            <constraint firstItem="7sh-OR-zuZ" firstAttribute="leading" secondItem="hDK-3I-FDX" secondAttribute="leadingMargin" constant="10" id="yeB-te-rfk"/>
+                            <constraint firstItem="7sh-OR-zuZ" firstAttribute="top" secondItem="gN8-hr-mMG" secondAttribute="bottom" constant="10" id="yhb-Ie-0bs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -157,13 +178,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9Y-W0-dNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="LuN-25-fU8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1854" y="-205"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose Password View Controller-->
         <scene sceneID="smr-2b-7OY">
             <objects>
-                <viewController id="qLC-zK-WEy" sceneMemberID="viewController">
+                <viewController id="qLC-zK-WEy" customClass="ChoosePasswordViewController" customModule="Dia_bestie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xo0-YT-oWi"/>
                         <viewControllerLayoutGuide type="bottom" id="0bC-Ic-1yI"/>
@@ -173,55 +195,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QPh-RD-eWh">
-                                <rect key="frame" x="66" y="144" width="243" height="200"/>
+                                <rect key="frame" x="36" y="144" width="303" height="220"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kti-Fh-98E">
-                                        <rect key="frame" x="0.0" y="0.0" width="243" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="gO9-mP-W8d"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="23"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHX-oc-0xP">
-                                        <rect key="frame" x="0.0" y="46" width="243" height="40"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ol-Dw-cgg">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHX-oc-0xP">
+                                        <rect key="frame" x="0.0" y="60" width="303" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="i2c-Ix-wIN"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-Gh-JKp">
-                                        <rect key="frame" x="0.0" y="106" width="243" height="40"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7L-Gh-JKp">
+                                        <rect key="frame" x="0.0" y="120" width="303" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="dsI-dT-dLb"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-df-DqK">
-                                        <rect key="frame" x="0.0" y="166" width="243" height="34"/>
+                                        <rect key="frame" x="0.0" y="180" width="303" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MwC-IX-dap"/>
+                                        </constraints>
                                         <state key="normal" title="Next">
                                             <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="qLC-zK-WEy" eventType="touchUpInside" id="UMg-zJ-9KR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="kti-Fh-98E" secondAttribute="trailing" id="5DF-uz-moa"/>
                                     <constraint firstAttribute="trailing" secondItem="S7L-Gh-JKp" secondAttribute="trailing" id="6v3-d4-Xsw"/>
                                     <constraint firstItem="S7L-Gh-JKp" firstAttribute="leading" secondItem="QPh-RD-eWh" secondAttribute="leading" id="D8z-pl-uBl"/>
                                     <constraint firstAttribute="trailing" secondItem="v6L-df-DqK" secondAttribute="trailing" id="J0Q-VI-iqT"/>
-                                    <constraint firstItem="kti-Fh-98E" firstAttribute="leading" secondItem="QPh-RD-eWh" secondAttribute="leading" id="TxK-i7-v8w"/>
+                                    <constraint firstItem="5Ol-Dw-cgg" firstAttribute="height" secondItem="xHX-oc-0xP" secondAttribute="height" id="O2v-4B-MVx"/>
                                     <constraint firstItem="xHX-oc-0xP" firstAttribute="leading" secondItem="QPh-RD-eWh" secondAttribute="leading" id="VQr-za-vTU"/>
                                     <constraint firstAttribute="bottom" secondItem="v6L-df-DqK" secondAttribute="bottom" id="XNh-Qc-orf"/>
+                                    <constraint firstItem="5Ol-Dw-cgg" firstAttribute="width" secondItem="xHX-oc-0xP" secondAttribute="width" id="XT4-ig-VNV"/>
                                     <constraint firstItem="v6L-df-DqK" firstAttribute="leading" secondItem="QPh-RD-eWh" secondAttribute="leading" id="XwM-Jv-mNU"/>
                                     <constraint firstItem="v6L-df-DqK" firstAttribute="width" secondItem="xHX-oc-0xP" secondAttribute="width" id="a9W-p8-a5t"/>
                                     <constraint firstAttribute="trailing" secondItem="xHX-oc-0xP" secondAttribute="trailing" id="eVD-QO-F7w"/>
-                                    <constraint firstItem="kti-Fh-98E" firstAttribute="top" secondItem="QPh-RD-eWh" secondAttribute="top" id="ffx-FG-3AR"/>
                                     <constraint firstItem="S7L-Gh-JKp" firstAttribute="top" secondItem="xHX-oc-0xP" secondAttribute="bottom" constant="20" id="lbz-4T-wfM"/>
                                     <constraint firstItem="v6L-df-DqK" firstAttribute="top" secondItem="S7L-Gh-JKp" secondAttribute="bottom" constant="20" id="o0I-Jz-B2R"/>
                                     <constraint firstItem="S7L-Gh-JKp" firstAttribute="width" secondItem="xHX-oc-0xP" secondAttribute="width" id="xnA-jd-HU0"/>
@@ -233,19 +260,40 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ok7-L4-iyY">
+                                <rect key="frame" x="26" y="30" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="493-xn-HAS"/>
+                                    <constraint firstAttribute="width" constant="46" id="krX-B9-b6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="AAn-Ui-0p0" kind="unwind" unwindAction="unwindToSetMyStatsViewController:" id="ltI-Rg-Oo7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Eno-oS-0Xm" firstAttribute="leading" secondItem="Tmy-mz-0S5" secondAttribute="leadingMargin" constant="50" id="0d6-Z4-DJz"/>
-                            <constraint firstItem="QPh-RD-eWh" firstAttribute="leading" secondItem="Tmy-mz-0S5" secondAttribute="leadingMargin" constant="50" id="DyR-4v-SPI"/>
+                            <constraint firstItem="ok7-L4-iyY" firstAttribute="top" secondItem="Xo0-YT-oWi" secondAttribute="bottom" constant="10" id="95J-Wd-8V4"/>
+                            <constraint firstItem="QPh-RD-eWh" firstAttribute="leading" secondItem="Tmy-mz-0S5" secondAttribute="leadingMargin" constant="20" id="DyR-4v-SPI"/>
+                            <constraint firstItem="ok7-L4-iyY" firstAttribute="leading" secondItem="Tmy-mz-0S5" secondAttribute="leadingMargin" constant="10" id="Mkf-Bv-pQ6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Eno-oS-0Xm" secondAttribute="trailing" constant="50" id="Sal-6W-iOW"/>
                             <constraint firstItem="Eno-oS-0Xm" firstAttribute="top" secondItem="Xo0-YT-oWi" secondAttribute="bottom" constant="50" id="V6W-ga-Ddn"/>
                             <constraint firstItem="QPh-RD-eWh" firstAttribute="top" secondItem="Eno-oS-0Xm" secondAttribute="bottom" constant="40" id="WCy-bB-fmJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QPh-RD-eWh" secondAttribute="trailing" constant="50" id="yIF-Fd-hSu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QPh-RD-eWh" secondAttribute="trailing" constant="20" id="yIF-Fd-hSu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmEmailTextField" destination="S7L-Gh-JKp" id="IIH-0D-KdW"/>
+                        <outlet property="enterEmailTextField" destination="5Ol-Dw-cgg" id="d4s-ct-oqD"/>
+                        <outlet property="enterPasswordTextField" destination="xHX-oc-0xP" id="E4A-zB-zkA"/>
+                        <outlet property="nextButton" destination="v6L-df-DqK" id="ZPZ-rP-d6h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kj1-Ng-vAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AAn-Ui-0p0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3476" y="-206"/>
         </scene>
@@ -262,45 +310,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0PI-sc-qXk">
-                                <rect key="frame" x="66" y="144" width="243" height="140"/>
+                                <rect key="frame" x="36" y="144" width="303" height="160"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3c-7W-rrd">
-                                        <rect key="frame" x="0.0" y="0.0" width="243" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="rb4-mP-qLk"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="23"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K70-Mc-Bmr">
-                                        <rect key="frame" x="0.0" y="46" width="243" height="40"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JIZ-kN-jrR">
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="enterEmailTextFieldPrimaryActionTriggered:" destination="cda-Nv-LfY" eventType="editingDidEnd" id="5D5-G3-J3Z"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="K70-Mc-Bmr">
+                                        <rect key="frame" x="0.0" y="60" width="303" height="40"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="KAa-gv-67Y"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="23"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="enterPasswordTextFieldPrimaryActionTriggered:" destination="cda-Nv-LfY" eventType="editingDidEnd" id="R1T-G9-ZIS"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6D-cU-XIV">
-                                        <rect key="frame" x="0.0" y="106" width="243" height="34"/>
+                                        <rect key="frame" x="0.0" y="120" width="303" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="vji-Mr-yWZ"/>
+                                        </constraints>
                                         <state key="normal" title="Next">
                                             <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="cda-Nv-LfY" eventType="touchUpInside" id="BZo-ZH-e9a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="JIZ-kN-jrR" firstAttribute="width" secondItem="K70-Mc-Bmr" secondAttribute="width" id="4QI-cC-xER"/>
                                     <constraint firstItem="M6D-cU-XIV" firstAttribute="leading" secondItem="0PI-sc-qXk" secondAttribute="leading" id="5kg-M6-MWW"/>
-                                    <constraint firstItem="U3c-7W-rrd" firstAttribute="leading" secondItem="0PI-sc-qXk" secondAttribute="leading" id="Fyy-G8-jdL"/>
                                     <constraint firstItem="M6D-cU-XIV" firstAttribute="width" secondItem="K70-Mc-Bmr" secondAttribute="width" id="JRS-b7-Ucm"/>
                                     <constraint firstAttribute="trailing" secondItem="M6D-cU-XIV" secondAttribute="trailing" id="K4e-rm-GJv"/>
-                                    <constraint firstAttribute="trailing" secondItem="U3c-7W-rrd" secondAttribute="trailing" id="NB9-JP-VT9"/>
                                     <constraint firstItem="K70-Mc-Bmr" firstAttribute="leading" secondItem="0PI-sc-qXk" secondAttribute="leading" id="OeL-VR-jBg"/>
                                     <constraint firstAttribute="bottom" secondItem="M6D-cU-XIV" secondAttribute="bottom" id="Otd-9T-VTe"/>
+                                    <constraint firstItem="JIZ-kN-jrR" firstAttribute="height" secondItem="K70-Mc-Bmr" secondAttribute="height" id="YWs-41-kuW"/>
                                     <constraint firstItem="M6D-cU-XIV" firstAttribute="top" secondItem="K70-Mc-Bmr" secondAttribute="bottom" constant="20" id="r7F-jW-GR9"/>
                                     <constraint firstAttribute="trailing" secondItem="K70-Mc-Bmr" secondAttribute="trailing" id="ud0-Wh-obr"/>
-                                    <constraint firstItem="U3c-7W-rrd" firstAttribute="top" secondItem="0PI-sc-qXk" secondAttribute="top" id="uyn-mB-gJc"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsy-Mt-p9e">
@@ -309,20 +367,40 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjO-9z-l5q">
+                                <rect key="frame" x="26" y="30" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Md-5b-K7s"/>
+                                    <constraint firstAttribute="width" constant="46" id="E3S-5v-U9N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="AcI-e7-R0l" kind="unwind" unwindAction="unwindToLoginViewController:" id="MDZ-zT-JuL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0PI-sc-qXk" firstAttribute="top" secondItem="Gsy-Mt-p9e" secondAttribute="bottom" constant="40" id="3Np-Px-J0e"/>
                             <constraint firstItem="Gsy-Mt-p9e" firstAttribute="top" secondItem="bes-Zs-YQe" secondAttribute="bottom" constant="50" id="EXe-Fy-mfb"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0PI-sc-qXk" secondAttribute="trailing" constant="50" id="JUX-HG-xDd"/>
-                            <constraint firstItem="0PI-sc-qXk" firstAttribute="leading" secondItem="a5K-xG-wwf" secondAttribute="leadingMargin" constant="50" id="Kqn-fS-dhD"/>
+                            <constraint firstItem="fjO-9z-l5q" firstAttribute="leading" secondItem="a5K-xG-wwf" secondAttribute="leadingMargin" constant="10" id="G8C-V5-u1A"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0PI-sc-qXk" secondAttribute="trailing" constant="20" id="JUX-HG-xDd"/>
+                            <constraint firstItem="0PI-sc-qXk" firstAttribute="leading" secondItem="a5K-xG-wwf" secondAttribute="leadingMargin" constant="20" id="Kqn-fS-dhD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Gsy-Mt-p9e" secondAttribute="trailing" constant="50" id="kl2-1v-FCl"/>
+                            <constraint firstItem="fjO-9z-l5q" firstAttribute="top" secondItem="bes-Zs-YQe" secondAttribute="bottom" constant="10" id="of4-x4-239"/>
                             <constraint firstItem="Gsy-Mt-p9e" firstAttribute="leading" secondItem="a5K-xG-wwf" secondAttribute="leadingMargin" constant="50" id="owe-YI-Eds"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="enterEmailTextField" destination="JIZ-kN-jrR" id="7u9-PJ-Hua"/>
+                        <outlet property="enterPasswordTextField" destination="K70-Mc-Bmr" id="CIc-2x-dlx"/>
+                        <outlet property="nextButton" destination="M6D-cU-XIV" id="ckq-Sr-Xox"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5W-jE-D3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AcI-e7-R0l" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1853.5999999999999" y="448.42578710644682"/>
         </scene>
@@ -344,10 +422,10 @@
             </objects>
             <point key="canvasLocation" x="69.599999999999994" y="149.77511244377811"/>
         </scene>
-        <!--Editing View Controller-->
+        <!--Set My Stats View Controller-->
         <scene sceneID="8fJ-aK-8FN">
             <objects>
-                <viewController id="33N-QM-Opi" customClass="EditingViewController" customModule="Dia_bestie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="33N-QM-Opi" customClass="SetMyStatsViewController" customModule="Dia_bestie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Svn-5h-nRA"/>
                         <viewControllerLayoutGuide type="bottom" id="ADC-nb-rh5"/>
@@ -385,7 +463,7 @@
                                         <rect key="frame" x="0.0" y="104" width="100" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -567,7 +645,7 @@
                                             <color key="titleColor" red="0.41656976940000001" green="0.94327098129999998" blue="0.87749713659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="calculateButtonTapped:" destination="33N-QM-Opi" eventType="touchUpInside" id="fBv-XF-aBR"/>
+                                            <action selector="nextButtonTapped:" destination="33N-QM-Opi" eventType="touchUpInside" id="Rth-VA-46a"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LSj-eU-5Tl" userLabel="1 : Stack View">
@@ -654,6 +732,20 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQK-5G-YPN">
+                                <rect key="frame" x="22" y="30" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bce-Bi-VCh"/>
+                                    <constraint firstAttribute="width" constant="46" id="qf2-Vl-h8A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Pcu-Xa-AU7" kind="unwind" unwindAction="unwindToDisplayNameViewController:" id="1zI-8V-eDT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -667,32 +759,34 @@
                             <constraint firstItem="OAs-74-Zxo" firstAttribute="top" secondItem="6ha-a7-KWU" secondAttribute="bottom" priority="750" constant="50" id="Sxy-EM-PRW"/>
                             <constraint firstItem="OAs-74-Zxo" firstAttribute="top" secondItem="EXk-7P-pgz" secondAttribute="bottom" id="WfN-I9-J5v"/>
                             <constraint firstItem="6ha-a7-KWU" firstAttribute="leading" secondItem="Zvh-7j-SyP" secondAttribute="leadingMargin" constant="10" id="YLh-am-ug4"/>
+                            <constraint firstItem="yQK-5G-YPN" firstAttribute="leading" secondItem="Zvh-7j-SyP" secondAttribute="leadingMargin" constant="6" id="Yme-2X-8PY"/>
                             <constraint firstItem="EXk-7P-pgz" firstAttribute="top" secondItem="6ha-a7-KWU" secondAttribute="bottom" constant="20" id="ZM7-AB-Gk4"/>
                             <constraint firstItem="Twg-ov-A2I" firstAttribute="top" secondItem="Svn-5h-nRA" secondAttribute="bottom" constant="70" id="nBh-yK-385"/>
                             <constraint firstItem="I0D-Q7-WUn" firstAttribute="top" secondItem="Svn-5h-nRA" secondAttribute="bottom" constant="20" id="oUm-ep-9o9"/>
                             <constraint firstAttribute="trailing" secondItem="EXk-7P-pgz" secondAttribute="trailing" id="r20-4q-5pz"/>
+                            <constraint firstItem="yQK-5G-YPN" firstAttribute="top" secondItem="Svn-5h-nRA" secondAttribute="bottom" constant="10" id="rKr-Kf-2hw"/>
                             <constraint firstItem="OAs-74-Zxo" firstAttribute="leading" secondItem="Zvh-7j-SyP" secondAttribute="leading" id="slh-XH-yAn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uIV-7Y-LwO"/>
                     <connections>
-                        <outlet property="calculateButton" destination="0Bj-rn-GQM" id="IAL-uT-0Tm"/>
-                        <outlet property="elevenAMTextField" destination="myT-BP-wxr" id="rBL-af-1NN"/>
-                        <outlet property="insulinDurationTextField" destination="qj7-cC-9Db" id="pMz-6h-Fs2"/>
-                        <outlet property="isfTextField" destination="inY-Zh-VAe" id="tNP-ua-nmy"/>
-                        <outlet property="mainView" destination="Zvh-7j-SyP" id="VFO-Pe-eS7"/>
-                        <outlet property="midnightRatioTextField" destination="cbi-Tm-Gvz" id="25B-0K-kuG"/>
-                        <outlet property="nineAMTextField" destination="peO-8n-msG" id="8Nh-BG-E3j"/>
-                        <outlet property="sixAMTextField" destination="8UJ-cg-UFW" id="ulw-34-WWI"/>
-                        <outlet property="sixPMTextField" destination="H9I-on-YEk" id="jHt-ma-K9a"/>
-                        <outlet property="targetBGTextField" destination="5Si-JY-ir0" id="ouV-zN-ABb"/>
-                        <outlet property="tenPMTextField" destination="piG-Ce-ycE" id="qa6-67-fo8"/>
-                        <outlet property="twoAMTextField" destination="4eV-NB-nrY" id="pVB-F3-c6z"/>
-                        <outlet property="twoPMTextField" destination="JBe-xt-Jte" id="nVW-ol-VmR"/>
+                        <outlet property="elevenAMRatioTextField" destination="myT-BP-wxr" id="bgH-Wg-faO"/>
+                        <outlet property="insulinDurationTextField" destination="qj7-cC-9Db" id="ObC-Am-VkZ"/>
+                        <outlet property="isfTextField" destination="inY-Zh-VAe" id="TeA-Lt-cbF"/>
+                        <outlet property="midnightRatioTextField" destination="cbi-Tm-Gvz" id="ph6-PN-uR1"/>
+                        <outlet property="nextButton" destination="0Bj-rn-GQM" id="2kq-wi-vUP"/>
+                        <outlet property="nineAMRatioTextField" destination="peO-8n-msG" id="Unk-1E-ucQ"/>
+                        <outlet property="sixAMRatioTextField" destination="8UJ-cg-UFW" id="oXW-59-Q5p"/>
+                        <outlet property="sixPMRatioTextField" destination="H9I-on-YEk" id="5CJ-Aa-oxE"/>
+                        <outlet property="targetBGTextField" destination="5Si-JY-ir0" id="5rS-Hp-F3a"/>
+                        <outlet property="tenPMRatioTextField" destination="piG-Ce-ycE" id="MOJ-hj-quL"/>
+                        <outlet property="twoAMRatioTextField" destination="4eV-NB-nrY" id="rQA-BC-ODX"/>
+                        <outlet property="twoPMRatioTextField" destination="JBe-xt-Jte" id="rCX-1p-FZc"/>
                         <segue destination="qLC-zK-WEy" kind="show" identifier="toChoosePassword" id="AwW-A9-4kb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PEg-fB-fOh" sceneMemberID="firstResponder"/>
+                <exit id="Pcu-Xa-AU7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2658" y="-206"/>
         </scene>

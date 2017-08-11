@@ -18,6 +18,7 @@ class NoYesCalcViewController: UIViewController {
     @IBOutlet weak var currentBGTextField: UITextField!
     @IBOutlet weak var findTotalUnitsButton: UIButton!
     @IBOutlet weak var numberOfUnitsLabel: UILabel!
+    @IBOutlet weak var homeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,8 @@ class NoYesCalcViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeys))
         self.view.addGestureRecognizer(tapGestureRecognizer)
         
+        carbsTextField.layer.cornerRadius = 15
+        currentBGTextField.layer.cornerRadius = 15
         numberOfUnitsLabel.textColor = UIColor.white
         findTotalUnitsButton.layer.cornerRadius = 8
     }
@@ -37,6 +40,10 @@ class NoYesCalcViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
         numberOfUnitsLabel.textColor = UIColor.white
+    }
+    
+    @IBAction func homeButtonTapped(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func findTotalUnitsButtonTapped(_ sender: UIButton) {

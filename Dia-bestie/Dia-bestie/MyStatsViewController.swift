@@ -20,8 +20,10 @@ class MyStatsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var signOutButton: UIButton!
     
     var statsArray = [Int]()
+    var timesArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,15 @@ class MyStatsViewController: UIViewController {
                       User.current.stats.sixPM,
                       User.current.stats.tenPM]
         
+        timesArray = ["12:00 AM",
+                      "2:00 AM",
+                      "6:00 AM",
+                      "9:00 AM",
+                      "11:00 AM",
+                      "2:00 PM",
+                      "6:00 PM",
+                      "10:00 PM"]
+        
         let name = User.current.displayName.capitalized
         nameLabel.text = "\(name)'s Stats"
         
@@ -44,7 +55,7 @@ class MyStatsViewController: UIViewController {
         
         displayISFLabel.text = String(isf)
         displayTargetBGLabel.text = String(targetBG)
-        displayInsulinDurationLabel.text = String(insulinDuration)
+        displayInsulinDurationLabel.text = String(Int(insulinDuration))
     }
     
     override func didReceiveMemoryWarning() {
@@ -69,6 +80,20 @@ class MyStatsViewController: UIViewController {
         self.performSegue(withIdentifier: Constants.Segue.toEditing, sender: self)
     }
     
+    @IBAction func signOutButtonTapped(_ sender: UIButton) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+        let initialViewController = UIStoryboard.initialViewController(for: .login)
+        self.view.window?.rootViewController = initialViewController
+        self.view.window?.makeKeyAndVisible()
+    }
+   
     @IBAction func unwindToMyStatsViewController(_ segue: UIStoryboardSegue) {
         
     }
@@ -83,8 +108,8 @@ extension MyStatsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "carbRatioTableViewCell", for: indexPath) as! CarbRatioTableViewCell
         
-        cell.timeLabel.text = "time of ratio"
-        cell.ratioLabel.text = "ratio of time"
+        cell.timeLabel.text = "\(timesArray[indexPath.row])"
+        cell.ratioLabel.text = "\(statsArray[indexPath.row])"
         
         return cell
     }

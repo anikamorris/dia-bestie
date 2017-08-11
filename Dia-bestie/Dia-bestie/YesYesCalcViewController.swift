@@ -19,6 +19,7 @@ class YesYesCalcViewController: UIViewController {
     @IBOutlet weak var hoursSinceTextField: UITextField!
     @IBOutlet weak var findTotalUnitsButton: UIButton!
     @IBOutlet weak var numberOfUnitsLabel: UILabel!
+    @IBOutlet weak var homeButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,10 @@ class YesYesCalcViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeys))
         self.view.addGestureRecognizer(tapGestureRecognizer)
         
+        carbsTextField.layer.cornerRadius = 15
+        currentBGTextField.layer.cornerRadius = 15
+        previousUnitsTextField.layer.cornerRadius = 15
+        hoursSinceTextField.layer.cornerRadius = 15
         numberOfUnitsLabel.textColor = UIColor.white
         findTotalUnitsButton.layer.cornerRadius = 8
     }
@@ -40,6 +45,10 @@ class YesYesCalcViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func homeButtonTapped(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func findTotalUnitsButtonTapped(_ sender: UIButton) {
@@ -111,7 +120,7 @@ class YesYesCalcViewController: UIViewController {
         
         let foodUnits = carb / Double(ratio)
         print(ratio)
-        let correctionUnits = ((currentBG - Double(targetBG)) / Double(isf)) - (previousUnit - (previousUnit * (hourSince / Double(insulinDuration))))
+        let correctionUnits = ((currentBG - Double(targetBG)) / Double(isf)) - (previousUnit - (previousUnit * (hourSince / insulinDuration)))
         print(foodUnits)
         print(correctionUnits)
         

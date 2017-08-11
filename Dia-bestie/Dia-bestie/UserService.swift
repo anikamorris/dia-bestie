@@ -23,8 +23,9 @@ struct UserService {
         })
     }
     
-    static func create(_ firUser: FIRUser, displayName: String, completion: @escaping (User?) -> Void) {
-        let userAttrs = ["displayName": displayName]
+    static func create(_ firUser: FIRUser, displayName: String, stats: Stats, completion: @escaping (User?) -> Void) {
+        let user = User(uid: firUser.uid, displayName: displayName, stats: stats)
+        let userAttrs = user.getDict()
         
         let ref = Database.database().reference().child("users").child(firUser.uid)
         ref.setValue(userAttrs) { (error, ref) in

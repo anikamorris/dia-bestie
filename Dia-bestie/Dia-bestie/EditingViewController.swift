@@ -33,10 +33,31 @@ class EditingViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeys))
         self.view.addGestureRecognizer(tapGestureRecognizer)
         
-        calculateButton.layer.cornerRadius = 6
+        midnightRatioTextField.layer.cornerRadius = 8
+        twoAMTextField.layer.cornerRadius = 8
+        sixAMTextField.layer.cornerRadius = 8
+        nineAMTextField.layer.cornerRadius = 8
+        elevenAMTextField.layer.cornerRadius = 8
+        twoPMTextField.layer.cornerRadius = 8
+        sixPMTextField.layer.cornerRadius = 8
+        tenPMTextField.layer.cornerRadius = 8
         
-       let name = User.current.displayName.capitalized
+        
+        
+        let name = User.current.displayName.capitalized
         nameLabel.text = "\(name)'s Stats"
+        
+        isfTextField.text = String(User.current.stats.isf)
+        targetBGTextField.text = String(User.current.stats.targetBG)
+        insulinDurationTextField.text = String(User.current.stats.insulinDuration)
+        midnightRatioTextField.text = String(User.current.stats.midnightRatio)
+        twoAMTextField.text = String(User.current.stats.twoAM)
+        sixAMTextField.text = String(User.current.stats.sixAM)
+        nineAMTextField.text = String(User.current.stats.nineAM)
+        elevenAMTextField.text = String(User.current.stats.elevenAM)
+        twoPMTextField.text = String(User.current.stats.twoPM)
+        sixPMTextField.text = String(User.current.stats.sixPM)
+        tenPMTextField.text = String(User.current.stats.tenPM)
     }
     
     func dismissKeys() {
@@ -56,100 +77,6 @@ class EditingViewController: UIViewController {
     @IBAction func unwindToEditingViewController(_ segue: UIStoryboardSegue) {
         
     }
-
-//    @IBAction func buttonTapped(_ sender: UIButton) {
-//        
-//        // set ISF
-//        guard let firUser = Auth.auth().currentUser,
-//            let isf = isfTextField.text,
-//            !isf.isEmpty else { return }
-//        
-//        let isfRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        isfRef.updateChildValues(["isf": Int(isf)!])
-//        
-//        // set target blood sugar
-//        guard let targetBG = targetBGTextField.text,
-//            !targetBG.isEmpty else { return }
-//        
-//        let targetBGRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        targetBGRef.updateChildValues(["targetBG": Int(targetBG)!])
-//        
-//        // set duration of insulin
-//        guard let insulinDuration = insulinDurationTextField.text,
-//            !insulinDuration.isEmpty else { return }
-//        
-//        let insulinDurationRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        insulinDurationRef.updateChildValues(["insulinDuration": Int(insulinDuration)!])
-//        
-//        // set midnight carb ratio
-//        guard let midnightRatio = midnightRatioTextField.text,
-//            !midnightRatio.isEmpty else { return }
-//        
-//        let midnightRatioRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        midnightRatioRef.updateChildValues(["midnightRatio": Int(midnightRatio)!])
-//        
-//        // set 2am carb ratio
-//        guard let twoAM = twoAMTextField.text,
-//            !twoAM.isEmpty else { return }
-//        
-//        let twoAMRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        twoAMRef.updateChildValues(["twoAM": Int(twoAM)!])
-//        
-//        // set 6am carb ratio
-//        guard let sixAM = sixAMTextField.text,
-//            !sixAM.isEmpty else { return }
-//        
-//        let sixAMRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        sixAMRef.updateChildValues(["sixAM": Int(sixAM)!])
-//
-//        // set 9am carb ratio
-//        guard let nineAM = nineAMTextField.text,
-//            !nineAM.isEmpty else { return }
-//        
-//        let nineAMRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        nineAMRef.updateChildValues(["nineAM": Int(nineAM)!])
-//        
-//        // set 11am carb ratio
-//        guard let elevenAM = elevenAMTextField.text,
-//            !elevenAM.isEmpty else { return }
-//        
-//        let elevenAMRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        elevenAMRef.updateChildValues(["elevenAM": Int(elevenAM)!])
-//        
-//        // set 2pm carb ratio
-//        guard let twoPM = twoPMTextField.text,
-//            !twoPM.isEmpty else { return }
-//        
-//        let twoPMRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        twoPMRef.updateChildValues(["twoPM": Int(twoPM)!])
-//        
-//        // set 6pm carb ratio
-//        guard let sixPM = sixPMTextField.text,
-//            !sixPM.isEmpty else { return }
-//        
-//        let sixPMRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        sixPMRef.updateChildValues(["sixPM": Int(sixPM)!])
-//        
-//        // set 10pm carb ratio
-//        guard let tenPM = tenPMTextField.text,
-//            !tenPM.isEmpty else { return }
-//        
-//        let tenPMRef = Database.database().reference().child("users").child(firUser.uid)
-//        
-//        tenPMRef.updateChildValues(["tenPM": Int(tenPM)!])
-//       
-//        print("everything is set")
-//    }
     
     @IBAction func calculateButtonTapped(_ sender: UIButton) {
         // set ISF
@@ -175,7 +102,7 @@ class EditingViewController: UIViewController {
         
         let insulinDurationRef = Database.database().reference().child("users").child(firUser.uid)
         
-        insulinDurationRef.updateChildValues(["insulinDuration": Int(insulinDuration)!])
+        insulinDurationRef.updateChildValues(["insulinDuration": Double(insulinDuration)!])
         
         // set midnight carb ratio
         guard let midnightRatio = midnightRatioTextField.text,
@@ -243,7 +170,6 @@ class EditingViewController: UIViewController {
         
         print("everything is set")
         
-        self.performSegue(withIdentifier: Constants.Segue.toMyStats, sender: self)
     }
 }
 

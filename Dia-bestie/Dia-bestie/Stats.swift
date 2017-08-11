@@ -12,7 +12,7 @@ import FirebaseDatabase.FIRDataSnapshot
 class Stats: NSObject {
     
     let targetBG: Int
-    let insulinDuration: Int
+    let insulinDuration: Double
     let isf: Int
     let midnightRatio: Int
     let twoAM: Int
@@ -25,7 +25,7 @@ class Stats: NSObject {
 
     required init?(coder aDecoder: NSCoder) {
         guard let targetBG = aDecoder.decodeObject(forKey: Constants.UserDefaults.targetBG) as? Int,
-            let insulinDuration = aDecoder.decodeObject(forKey: Constants.UserDefaults.insulinDuration) as? Int,
+            let insulinDuration = aDecoder.decodeObject(forKey: Constants.UserDefaults.insulinDuration) as? Double,
             let isf = aDecoder.decodeObject(forKey: Constants.UserDefaults.isf) as? Int,
             let midnightRatio = aDecoder.decodeObject(forKey: Constants.UserDefaults.midnightRatio) as? Int,
             let twoAM = aDecoder.decodeObject(forKey: Constants.UserDefaults.twoAM) as? Int,
@@ -51,7 +51,7 @@ class Stats: NSObject {
         super.init()
     }
     
-    init(targetBG: Int, insulinDuration: Int, isf: Int, midnightRatio: Int, twoAM: Int, sixAM: Int, nineAM: Int, elevenAM: Int, twoPM: Int, sixPM: Int, tenPM: Int) {
+    init(targetBG: Int, insulinDuration: Double, isf: Int, midnightRatio: Int, twoAM: Int, sixAM: Int, nineAM: Int, elevenAM: Int, twoPM: Int, sixPM: Int, tenPM: Int) {
         self.targetBG = targetBG
         self.insulinDuration = insulinDuration
         self.isf = isf
@@ -69,7 +69,7 @@ class Stats: NSObject {
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
             let targetBG = dict["targetBG"] as? Int,
-            let insulinDuration = dict["insulinDuration"] as? Int,
+            let insulinDuration = dict["insulinDuration"] as? Double,
             let isf = dict["isf"] as? Int,
             let midnightRatio = dict["midnightRatio"] as? Int,
             let twoAM = dict["twoAM"] as? Int,
@@ -94,6 +94,20 @@ class Stats: NSObject {
         self.tenPM = tenPM
     }
     
-    
+    func getDict() -> [String : Any] {
+        var dict = [String : Any]()
+        dict["targetBG"] = self.targetBG
+        dict["insulinDuration"] = self.insulinDuration
+        dict["isf"] = self.isf
+        dict["midnightRatio"] = self.midnightRatio
+        dict["twoAM"] = self.twoAM
+        dict["sixAM"] = self.sixAM
+        dict["nineAM"] = self.nineAM
+        dict["elevenAM"] = self.elevenAM
+        dict["twoPM"] = self.twoPM
+        dict["sixPM"] = self.sixPM
+        dict["tenPM"] = self.tenPM
+        return dict
+    }
     
 }

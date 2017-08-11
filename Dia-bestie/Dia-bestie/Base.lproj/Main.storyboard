@@ -51,7 +51,7 @@
                                         <rect key="frame" x="0.0" y="104" width="100" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -140,8 +140,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RSu-7o-cfn" userLabel="Ratio Input Stack View">
                                         <rect key="frame" x="305" y="6" width="40" height="310"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFd-f8-1x9">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFd-f8-1x9">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Q5f-9B-gOg"/>
                                                     <constraint firstAttribute="width" constant="40" id="roM-gg-AoM"/>
@@ -150,8 +151,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgF-m3-sl1">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgF-m3-sl1">
                                                 <rect key="frame" x="0.0" y="40" width="40" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="A21-6q-FHD"/>
                                                     <constraint firstAttribute="width" constant="40" id="h02-4i-x8m"/>
@@ -160,8 +162,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Kx-BC-Jmc">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Kx-BC-Jmc">
                                                 <rect key="frame" x="0.0" y="80" width="40" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="jyb-Jt-KwO"/>
                                                     <constraint firstAttribute="width" constant="40" id="s1a-eg-NyT"/>
@@ -170,8 +173,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vic-Fh-H10">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vic-Fh-H10">
                                                 <rect key="frame" x="0.0" y="120" width="40" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="QBa-vL-s3a"/>
                                                     <constraint firstAttribute="height" constant="30" id="XXV-sI-FLZ"/>
@@ -180,8 +184,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tya-7a-2bU">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tya-7a-2bU">
                                                 <rect key="frame" x="0.0" y="160" width="40" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Zi2-1b-joa"/>
                                                     <constraint firstAttribute="width" constant="40" id="sT4-uQ-rjM"/>
@@ -190,8 +195,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYz-yN-orM">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYz-yN-orM">
                                                 <rect key="frame" x="0.0" y="200" width="40" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="AAa-ip-ZCR"/>
                                                     <constraint firstAttribute="width" constant="40" id="sPz-ry-cGb"/>
@@ -200,8 +206,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjC-c2-IVP">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wjC-c2-IVP">
                                                 <rect key="frame" x="0.0" y="240" width="40" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="jKR-G5-Q5t"/>
                                                     <constraint firstAttribute="height" constant="30" id="pE3-qM-hdE"/>
@@ -210,8 +217,9 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCa-Rp-m7c">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCa-Rp-m7c">
                                                 <rect key="frame" x="0.0" y="280" width="40" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="gm6-dN-PlL"/>
                                                     <constraint firstAttribute="width" constant="40" id="twl-s7-SCG"/>
@@ -377,13 +385,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zr6-hN-wWt">
-                                <rect key="frame" x="66" y="40" width="243" height="34"/>
-                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="25"/>
+                                <rect key="frame" x="66" y="40" width="243" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="PG4-rR-DBQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RUx-cl-qFy">
-                                <rect key="frame" x="26" y="94" width="138.5" height="133.5"/>
+                                <rect key="frame" x="26" y="106" width="138.5" height="133.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-1z-JeL">
                                         <rect key="frame" x="0.0" y="0.0" width="138.5" height="24.5"/>
@@ -405,8 +416,31 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fy4-S0-nFq">
+                                <rect key="frame" x="285.5" y="106" width="43.5" height="133.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fh-9f-41e">
+                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yL-HB-5QL">
+                                        <rect key="frame" x="0.0" y="54.5" width="43.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-TC-zH1">
+                                        <rect key="frame" x="0.0" y="109" width="43.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MsB-Eo-HNJ">
-                                <rect key="frame" x="0.0" y="277.5" width="375" height="332.5"/>
+                                <rect key="frame" x="0.0" y="289.5" width="375" height="332.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="332.5" id="S4Y-gc-odn"/>
@@ -430,16 +464,25 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJn-MJ-7CT">
-                                                    <rect key="frame" x="291" y="0.0" width="46" height="59.5"/>
-                                                    <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJn-MJ-7CT">
+                                                    <rect key="frame" x="268.5" y="0.0" width="68.5" height="59.5"/>
+                                                    <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="30"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1  : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcm-c1-ZpF">
+                                                    <rect key="frame" x="214.5" y="8" width="44" height="43.5"/>
+                                                    <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="30"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="OUt-ce-mIg" firstAttribute="top" secondItem="IQN-iX-S6r" secondAttribute="top" id="4Ie-4h-4he"/>
+                                                <constraint firstItem="dcm-c1-ZpF" firstAttribute="top" secondItem="IQN-iX-S6r" secondAttribute="topMargin" id="Gsk-bO-PFJ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dcm-c1-ZpF" secondAttribute="bottom" id="Qck-Ag-DyZ"/>
                                                 <constraint firstAttribute="bottom" secondItem="OUt-ce-mIg" secondAttribute="bottom" id="dKK-Mz-h5l"/>
+                                                <constraint firstItem="GJn-MJ-7CT" firstAttribute="leading" secondItem="dcm-c1-ZpF" secondAttribute="trailing" constant="10" id="gNZ-4V-4Kl"/>
                                                 <constraint firstItem="GJn-MJ-7CT" firstAttribute="top" secondItem="IQN-iX-S6r" secondAttribute="top" id="jPl-2B-jWN"/>
                                                 <constraint firstItem="OUt-ce-mIg" firstAttribute="leading" secondItem="IQN-iX-S6r" secondAttribute="leadingMargin" constant="20" id="p3u-GP-epZ"/>
                                                 <constraint firstAttribute="bottom" secondItem="GJn-MJ-7CT" secondAttribute="bottom" id="qk6-eh-iKt"/>
@@ -459,7 +502,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jci-Wj-Zv0">
-                                <rect key="frame" x="16" y="610" width="343" height="57"/>
+                                <rect key="frame" x="16" y="622" width="343" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -468,59 +511,52 @@
                                     <action selector="calculateButtonTapped:" destination="xDq-ww-V4F" eventType="touchUpInside" id="W6w-eD-68k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyI-80-Kgw">
-                                <rect key="frame" x="289" y="30" width="60" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="939-wt-IuB"/>
-                                    <constraint firstAttribute="height" constant="40" id="pcO-Hd-ab1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Edit">
-                                    <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="editButtonTapped:" destination="xDq-ww-V4F" eventType="touchUpInside" id="zd6-fa-Oem"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fy4-S0-nFq">
-                                <rect key="frame" x="285.5" y="94" width="43.5" height="133.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="250" translatesAutoresizingMaskIntoConstraints="NO" id="HhI-SN-3Wp">
+                                <rect key="frame" x="11" y="27" width="356" height="20"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fh-9f-41e">
-                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="24.5"/>
-                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yL-HB-5QL">
-                                        <rect key="frame" x="0.0" y="54.5" width="43.5" height="24.5"/>
-                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-TC-zH1">
-                                        <rect key="frame" x="0.0" y="109" width="43.5" height="24.5"/>
-                                        <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="18"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm9-jI-6wb">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Sign Out">
+                                            <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signOutButtonTapped:" destination="xDq-ww-V4F" eventType="touchUpInside" id="DRl-PG-DEQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyI-80-Kgw">
+                                        <rect key="frame" x="306" y="0.0" width="50" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="939-wt-IuB"/>
+                                            <constraint firstAttribute="height" constant="20" id="pcO-Hd-ab1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editButtonTapped:" destination="xDq-ww-V4F" eventType="touchUpInside" id="zd6-fa-Oem"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Jci-Wj-Zv0" secondAttribute="trailing" id="2c7-R1-42V"/>
+                            <constraint firstAttribute="trailing" secondItem="HhI-SN-3Wp" secondAttribute="trailing" constant="8" id="63H-1a-mSQ"/>
                             <constraint firstItem="QrI-Zi-t7t" firstAttribute="top" secondItem="Jci-Wj-Zv0" secondAttribute="bottom" id="6RX-fU-KXp"/>
+                            <constraint firstItem="HhI-SN-3Wp" firstAttribute="leading" secondItem="EEe-Q0-E6L" secondAttribute="leading" constant="11" id="A2N-OD-6j1"/>
                             <constraint firstItem="zr6-hN-wWt" firstAttribute="top" secondItem="7vQ-NR-Bij" secondAttribute="bottom" constant="20" id="GqO-rw-j8h"/>
                             <constraint firstItem="RUx-cl-qFy" firstAttribute="leading" secondItem="EEe-Q0-E6L" secondAttribute="leadingMargin" constant="10" id="IEo-th-vL9"/>
                             <constraint firstItem="MsB-Eo-HNJ" firstAttribute="top" secondItem="RUx-cl-qFy" secondAttribute="bottom" constant="50" id="JBE-E9-H0X"/>
                             <constraint firstItem="Jci-Wj-Zv0" firstAttribute="leading" secondItem="EEe-Q0-E6L" secondAttribute="leadingMargin" id="Ptl-Lh-YQD"/>
+                            <constraint firstItem="HhI-SN-3Wp" firstAttribute="top" secondItem="7vQ-NR-Bij" secondAttribute="bottom" constant="7" id="S0s-Hk-gjX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fy4-S0-nFq" secondAttribute="trailing" constant="30" id="Sg5-yT-owl"/>
                             <constraint firstItem="MsB-Eo-HNJ" firstAttribute="top" secondItem="RUx-cl-qFy" secondAttribute="bottom" constant="50" id="bKk-j9-BCB"/>
                             <constraint firstItem="MsB-Eo-HNJ" firstAttribute="leading" secondItem="EEe-Q0-E6L" secondAttribute="leading" id="fWd-2P-uMu"/>
                             <constraint firstItem="MsB-Eo-HNJ" firstAttribute="top" secondItem="fy4-S0-nFq" secondAttribute="bottom" constant="50" id="gCm-E8-hbt"/>
-                            <constraint firstItem="zyI-80-Kgw" firstAttribute="top" secondItem="7vQ-NR-Bij" secondAttribute="bottom" constant="10" id="gIO-1p-BiG"/>
                             <constraint firstItem="RUx-cl-qFy" firstAttribute="top" secondItem="zr6-hN-wWt" secondAttribute="bottom" constant="20" id="hPB-ji-qUs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zyI-80-Kgw" secondAttribute="trailing" constant="10" id="jLV-vU-2eI"/>
                             <constraint firstAttribute="trailing" secondItem="MsB-Eo-HNJ" secondAttribute="trailing" id="rW3-MW-Lwq"/>
                             <constraint firstItem="zr6-hN-wWt" firstAttribute="leading" secondItem="EEe-Q0-E6L" secondAttribute="leadingMargin" constant="50" id="trd-mq-Eyw"/>
                             <constraint firstItem="Jci-Wj-Zv0" firstAttribute="top" secondItem="MsB-Eo-HNJ" secondAttribute="bottom" id="uQu-8t-2EE"/>
@@ -535,6 +571,7 @@
                         <outlet property="displayTargetBGLabel" destination="9yL-HB-5QL" id="Smd-Ta-uxz"/>
                         <outlet property="editButton" destination="zyI-80-Kgw" id="mK3-Dw-dXo"/>
                         <outlet property="nameLabel" destination="zr6-hN-wWt" id="trR-Sn-ouB"/>
+                        <outlet property="signOutButton" destination="vm9-jI-6wb" id="gCD-Z2-VfF"/>
                         <outlet property="tableView" destination="MsB-Eo-HNJ" id="jry-Ec-DzS"/>
                         <segue destination="l0k-8y-mdn" kind="show" identifier="toCorrections" id="PxK-oh-YRk"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toEditing" id="PRd-C8-RHh"/>
@@ -542,7 +579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZg-Eq-72q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="-8"/>
+            <point key="canvasLocation" x="572" y="-8.5457271364317844"/>
         </scene>
         <!--Corrections View Controller-->
         <scene sceneID="ggO-JY-e63">
@@ -759,14 +796,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOw-Ec-n92">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOw-Ec-n92">
                                 <rect key="frame" x="26" y="169" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="HGX-SU-9OW"/>
                                     <constraint firstAttribute="width" constant="100" id="tjB-Nd-wm8"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your current BG?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccu-1T-PIP">
@@ -775,14 +813,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGm-JW-rnj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGm-JW-rnj">
                                 <rect key="frame" x="26" y="257" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="IXm-Va-jPe"/>
                                     <constraint firstAttribute="width" constant="100" id="as0-0D-YW3"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cb-RT-xoO">
@@ -800,6 +839,20 @@
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY7-fK-rrt">
+                                <rect key="frame" x="294" y="35" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RcU-UZ-Ohv"/>
+                                    <constraint firstAttribute="width" constant="55" id="bxc-jJ-fkF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButtonTapped:" destination="ZI8-DM-tOK" eventType="touchUpInside" id="PSm-K1-yaJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -816,10 +869,12 @@
                             <constraint firstItem="n8t-Ha-dJ5" firstAttribute="top" secondItem="SHb-Dc-2C4" secondAttribute="bottom" constant="20" id="NKd-jD-f3x"/>
                             <constraint firstItem="SHb-Dc-2C4" firstAttribute="leading" secondItem="wff-o8-IbJ" secondAttribute="leadingMargin" constant="60" id="PcT-99-rLH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SHb-Dc-2C4" secondAttribute="trailing" constant="60" id="aSj-Sx-RI2"/>
+                            <constraint firstItem="oY7-fK-rrt" firstAttribute="top" secondItem="j0p-ij-eTE" secondAttribute="bottom" constant="15" id="b4t-65-BcA"/>
                             <constraint firstItem="cGm-JW-rnj" firstAttribute="leading" secondItem="wff-o8-IbJ" secondAttribute="leadingMargin" constant="10" id="bSL-00-rO1"/>
                             <constraint firstItem="n8t-Ha-dJ5" firstAttribute="leading" secondItem="wff-o8-IbJ" secondAttribute="leadingMargin" constant="10" id="hIw-5p-Vx6"/>
                             <constraint firstItem="Ccu-1T-PIP" firstAttribute="top" secondItem="iOw-Ec-n92" secondAttribute="bottom" constant="20" id="kWo-ZI-5M0"/>
                             <constraint firstItem="bw5-8s-RdE" firstAttribute="top" secondItem="j0p-ij-eTE" secondAttribute="bottom" constant="10" id="ogb-ba-W19"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oY7-fK-rrt" secondAttribute="trailing" constant="10" id="p9b-2N-5Fg"/>
                             <constraint firstItem="iOw-Ec-n92" firstAttribute="top" secondItem="n8t-Ha-dJ5" secondAttribute="bottom" constant="15" id="u3J-Fb-iTp"/>
                         </constraints>
                     </view>
@@ -828,6 +883,7 @@
                         <outlet property="carbsTextField" destination="iOw-Ec-n92" id="3Yn-lK-dBp"/>
                         <outlet property="currentBGTextField" destination="cGm-JW-rnj" id="U8Y-VP-OgC"/>
                         <outlet property="findTotalUnitsButton" destination="9cb-RT-xoO" id="PfV-wh-asH"/>
+                        <outlet property="homeButton" destination="oY7-fK-rrt" id="g1T-2V-1CH"/>
                         <outlet property="numberOfUnitsLabel" destination="SHb-Dc-2C4" id="bMQ-4p-72u"/>
                     </connections>
                 </viewController>
@@ -871,14 +927,15 @@
                                     <action selector="findTotalUnitsButtonTapped:" destination="8UP-Xr-JD2" eventType="touchUpInside" id="kNa-qI-8DF"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oCb-qT-7Kw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oCb-qT-7Kw">
                                 <rect key="frame" x="26" y="169" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="YiL-p4-l4f"/>
                                     <constraint firstAttribute="width" constant="100" id="hSR-J9-I0P"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your current BG?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ey-T6-24c">
@@ -893,10 +950,26 @@
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QV-4n-eqy">
+                                <rect key="frame" x="294" y="35" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="KHb-iJ-GWT"/>
+                                    <constraint firstAttribute="height" constant="30" id="LG7-tT-kws"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButtonTapped:" destination="8UP-Xr-JD2" eventType="touchUpInside" id="yiG-vS-IXn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1QV-4n-eqy" firstAttribute="top" secondItem="84h-n3-jAJ" secondAttribute="bottom" constant="15" id="0gq-v0-pYZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2ey-T6-24c" secondAttribute="trailing" constant="50" id="2ZU-vz-vcF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1QV-4n-eqy" secondAttribute="trailing" constant="10" id="Cau-XE-DHL"/>
                             <constraint firstItem="oat-Gf-uwI" firstAttribute="leading" secondItem="KcK-Ig-97I" secondAttribute="leadingMargin" constant="10" id="K3I-7p-4Uv"/>
                             <constraint firstItem="oCb-qT-7Kw" firstAttribute="leading" secondItem="KcK-Ig-97I" secondAttribute="leadingMargin" constant="10" id="KUs-5U-QH4"/>
                             <constraint firstItem="1gX-mz-I2a" firstAttribute="top" secondItem="84h-n3-jAJ" secondAttribute="bottom" constant="50" id="Nc2-b9-jEW"/>
@@ -915,6 +988,7 @@
                         <outlet property="backButton" destination="oat-Gf-uwI" id="OFp-OO-fZq"/>
                         <outlet property="currentBGTextField" destination="oCb-qT-7Kw" id="IYI-DY-Vh2"/>
                         <outlet property="findTotalUnitsButton" destination="MjN-tk-3pH" id="zRi-Hd-yo9"/>
+                        <outlet property="homeButton" destination="1QV-4n-eqy" id="sih-dJ-raZ"/>
                         <outlet property="numberOfUnitsLabel" destination="1gX-mz-I2a" id="GET-Hp-wOk"/>
                     </connections>
                 </viewController>
@@ -1054,14 +1128,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6h9-ou-FCF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6h9-ou-FCF">
                                 <rect key="frame" x="26" y="169" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="sGY-rr-YBd"/>
                                     <constraint firstAttribute="height" constant="30" id="zy3-C6-LcB"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUx-ZR-t5f">
@@ -1079,23 +1154,27 @@
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LcY-Ki-ugy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LcY-Ki-ugy">
                                 <rect key="frame" x="26" y="282" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9zH-7u-NaY"/>
                                     <constraint firstAttribute="width" constant="100" id="kL3-rZ-lsC"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRd-1z-aKo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRd-1z-aKo">
                                 <rect key="frame" x="26" y="393" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gDt-qM-iX2"/>
                                     <constraint firstAttribute="width" constant="100" id="l6x-02-Unc"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours has it been since your last correction?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP5-PY-qKi">
                                 <rect key="frame" x="26" y="330" width="283" height="48"/>
@@ -1106,6 +1185,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcL-tA-nSZ">
+                                <rect key="frame" x="294" y="35" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8O4-ys-Ay5"/>
+                                    <constraint firstAttribute="width" constant="55" id="uUa-DJ-YDT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButtonTapped:" destination="ZpX-ps-WmV" eventType="touchUpInside" id="l0Z-wa-5Al"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1128,7 +1221,9 @@
                             <constraint firstItem="vP5-PY-qKi" firstAttribute="top" secondItem="xmM-YU-Q8i" secondAttribute="bottom" constant="63" id="gIR-Zd-q4r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QUx-ZR-t5f" secondAttribute="trailing" constant="22" id="gVx-77-0sn"/>
                             <constraint firstItem="FRd-1z-aKo" firstAttribute="leading" secondItem="qjH-wo-SgS" secondAttribute="leadingMargin" constant="10" id="iD3-OA-bH3"/>
+                            <constraint firstItem="KcL-tA-nSZ" firstAttribute="top" secondItem="cee-IY-CZL" secondAttribute="bottom" constant="15" id="iv3-7L-FqW"/>
                             <constraint firstItem="QUx-ZR-t5f" firstAttribute="leading" secondItem="qjH-wo-SgS" secondAttribute="leadingMargin" constant="21" id="kxe-dn-uMQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KcL-tA-nSZ" secondAttribute="trailing" constant="10" id="ooL-hv-6Bl"/>
                             <constraint firstItem="FRd-1z-aKo" firstAttribute="top" secondItem="vP5-PY-qKi" secondAttribute="bottom" constant="15" id="paV-ID-1qO"/>
                             <constraint firstItem="LcY-Ki-ugy" firstAttribute="leading" secondItem="qjH-wo-SgS" secondAttribute="leadingMargin" constant="10" id="rCu-bB-pXy"/>
                             <constraint firstItem="8bm-Wg-CBg" firstAttribute="top" secondItem="QUx-ZR-t5f" secondAttribute="bottom" constant="80" id="sIJ-yp-HVF"/>
@@ -1139,6 +1234,7 @@
                         <outlet property="backButton" destination="xcp-Sd-M7l" id="t1H-hY-Sjo"/>
                         <outlet property="currentBGTextField" destination="6h9-ou-FCF" id="NwI-Zi-1PG"/>
                         <outlet property="findTotalUnitsButton" destination="QUx-ZR-t5f" id="B0W-os-Acm"/>
+                        <outlet property="homeButton" destination="KcL-tA-nSZ" id="Sh7-C6-2XN"/>
                         <outlet property="hoursSinceTextField" destination="FRd-1z-aKo" id="5Ea-WW-TsV"/>
                         <outlet property="numberOfUnitsLabel" destination="7Ip-pX-Aum" id="tUc-vs-h9h"/>
                         <outlet property="previousUnitsTextField" destination="LcY-Ki-ugy" id="q9E-BT-fev"/>
@@ -1167,7 +1263,7 @@
                                     <constraint firstAttribute="width" constant="45" id="FOz-fB-gU7"/>
                                     <constraint firstAttribute="height" constant="30" id="lqc-G6-LqE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="20"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.41568627450000001" green="0.94509803920000002" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -1187,24 +1283,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpG-GM-kXe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpG-GM-kXe">
                                 <rect key="frame" x="26" y="169" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="iFe-9g-J35"/>
                                     <constraint firstAttribute="width" constant="100" id="rwg-Yo-6lE"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sju-ts-bXa">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sju-ts-bXa">
                                 <rect key="frame" x="26" y="262" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="aIT-gx-DP7"/>
                                     <constraint firstAttribute="height" constant="30" id="ah6-ye-zJd"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpR-1l-ZEw">
@@ -1225,15 +1323,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XXa-6u-U18">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XXa-6u-U18">
                                 <rect key="frame" x="26" y="375" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="PPc-nj-NUi"/>
                                     <constraint firstAttribute="width" constant="100" id="bLd-MV-qMa"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours has it been since your last correction?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfj-yC-diW">
                                 <rect key="frame" x="26" y="425" width="283" height="48"/>
@@ -1244,15 +1343,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZb-Dj-9qk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZb-Dj-9qk">
                                 <rect key="frame" x="26" y="488" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="52o-LR-V4p"/>
                                     <constraint firstAttribute="width" constant="100" id="l0w-H1-zSu"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dve-HN-MkW">
                                 <rect key="frame" x="76" y="70" width="223" height="41"/>
@@ -1260,12 +1360,27 @@
                                 <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrU-5q-s4a">
+                                <rect key="frame" x="294" y="30" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="2C3-wA-avt"/>
+                                    <constraint firstAttribute="height" constant="30" id="U2k-wD-A0G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="20"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="0.94117647059999998" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButtonTapped:" destination="a4k-26-0c7" eventType="touchUpInside" id="LXS-L2-cE4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dve-HN-MkW" firstAttribute="top" secondItem="EtJ-k9-4Pk" secondAttribute="bottom" constant="50" id="5Sd-g1-ADo"/>
                             <constraint firstItem="HZb-Dj-9qk" firstAttribute="top" secondItem="wfj-yC-diW" secondAttribute="bottom" constant="15" id="CR6-20-Ocq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oLh-Bx-SJP" secondAttribute="trailing" constant="50" id="Cec-rB-c7c"/>
+                            <constraint firstItem="lrU-5q-s4a" firstAttribute="top" secondItem="EtJ-k9-4Pk" secondAttribute="bottom" constant="10" id="CqN-gU-JEz"/>
                             <constraint firstItem="HZb-Dj-9qk" firstAttribute="leading" secondItem="FrY-VG-B6u" secondAttribute="leadingMargin" constant="10" id="Djj-ee-Tcr"/>
                             <constraint firstItem="4I7-P7-yck" firstAttribute="top" secondItem="lpR-1l-ZEw" secondAttribute="bottom" constant="80" id="F0D-W3-5e2"/>
                             <constraint firstItem="5MG-gZ-fbK" firstAttribute="top" secondItem="EtJ-k9-4Pk" secondAttribute="bottom" constant="10" id="KlF-4Y-8hP"/>
@@ -1278,6 +1393,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="lpR-1l-ZEw" secondAttribute="trailing" constant="22" id="ZOS-Jq-Szz"/>
                             <constraint firstItem="oLh-Bx-SJP" firstAttribute="top" secondItem="B7o-rk-9ug" secondAttribute="bottom" constant="70" id="ZRa-3m-gFi"/>
                             <constraint firstItem="lpR-1l-ZEw" firstAttribute="leading" secondItem="FrY-VG-B6u" secondAttribute="leadingMargin" constant="21" id="Zqq-jT-boT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lrU-5q-s4a" secondAttribute="trailing" constant="10" id="ajo-TU-7Lj"/>
                             <constraint firstItem="vXa-EV-P7p" firstAttribute="top" secondItem="sju-ts-bXa" secondAttribute="bottom" constant="20" id="hD9-p5-tA8"/>
                             <constraint firstItem="XXa-6u-U18" firstAttribute="top" secondItem="vXa-EV-P7p" secondAttribute="bottom" constant="15" id="hTh-k6-8cN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dve-HN-MkW" secondAttribute="trailing" constant="60" id="hcP-ib-cYT"/>
@@ -1298,6 +1414,7 @@
                         <outlet property="carbsTextField" destination="SpG-GM-kXe" id="EKT-oY-3bp"/>
                         <outlet property="currentBGTextField" destination="sju-ts-bXa" id="0ZZ-Lp-MeD"/>
                         <outlet property="findTotalUnitsButton" destination="lpR-1l-ZEw" id="k3k-G2-XRg"/>
+                        <outlet property="homeButton" destination="lrU-5q-s4a" id="fA7-Cr-hdl"/>
                         <outlet property="hoursSinceTextField" destination="HZb-Dj-9qk" id="9r8-Nj-Hqy"/>
                         <outlet property="numberOfUnitsLabel" destination="dve-HN-MkW" id="KhV-JH-Bjf"/>
                         <outlet property="previousUnitsTextField" destination="XXa-6u-U18" id="eJE-cb-bRK"/>

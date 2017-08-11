@@ -21,11 +21,15 @@ struct Constants {
         static let toNoYesCalc = "toNoYesCalc"
         static let toNoNoCalc = "toNoNoCalc"
         static let toEditing = "toEditing"
+        static let toSignIn = "toSignIn"
+        static let toSetMyStats = "toSetMyStats"
+        static let toChoosePassword = "toChoosePassword"
     }
     
     struct UserDefaults {
         static let currentUser = "currentUser"
         static let uid = "uid"
+        static let stats = "stats"
         static let displayName = "displayName"
         static let isf = "isf"
         static let insulinDuration = "insulinDuration"
